@@ -13,6 +13,41 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        "line-from-center": "line-from-center 4s forwards",
+        "line-flow" : "line-flow 2.0s ease-in-out infinite",
+      },
+      keyframes: {
+        "line-from-center": {
+          "0%": {
+            "width": "0%"
+          },
+          "100%": {
+            "width": "100%",
+          },
+        },
+        "line-flow": {
+          "0%": {
+            "height": "0",
+            "top": "0",
+            "opacity": "0",
+            "width": "3px",
+          },
+          "40%": {
+            "top": "80px",
+            "height": "60px",
+            "opacity": "1",
+            "width": "3px",
+
+          },
+          "80%": {
+            "height": "60px",
+            "top": "80px",
+            "opacity": "0",
+            "width": "3px"
+          },
+        },
+      },
     },
   },
   plugins: [],

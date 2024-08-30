@@ -14,7 +14,7 @@ const Header: React.FC<Page> = (props) => {
                 <li><NextLink href="../about">About</NextLink></li>
                 <li><NextLink href="../skill">Skill</NextLink></li>
                 <li><NextLink href="../work">Work</NextLink></li>
-                <li><NextLink href="../blog">Blog</NextLink></li>
+                <li><NextLink href="https://www.jackapp.jp/blog/writer/%E3%81%BE%E3%81%93%E3%81%A1%E3%82%83%E3%83%BC%E3%82%93" target="_blank">Blog</NextLink></li>
             </ul>
         )
     } else if (page === "about") {
@@ -24,7 +24,7 @@ const Header: React.FC<Page> = (props) => {
                 <li className="text-white"><NextLink href="../about">About</NextLink></li>
                 <li><NextLink href="../skill">Skill</NextLink></li>
                 <li><NextLink href="../work">Work</NextLink></li>
-                <li><NextLink href="../blog">Blog</NextLink></li>
+                <li><NextLink href="https://www.jackapp.jp/blog/writer/%E3%81%BE%E3%81%93%E3%81%A1%E3%82%83%E3%83%BC%E3%82%93" target="_blank">Blog</NextLink></li>
             </ul>
         )
     } else if (page === "skill") {
@@ -34,7 +34,7 @@ const Header: React.FC<Page> = (props) => {
                 <li><NextLink href="../about">About</NextLink></li>
                 <li className="text-white"><NextLink href="../skill">Skill</NextLink></li>
                 <li><NextLink href="../work">Work</NextLink></li>
-                <li><NextLink href="../blog">Blog</NextLink></li>
+                <li><NextLink href="https://www.jackapp.jp/blog/writer/%E3%81%BE%E3%81%93%E3%81%A1%E3%82%83%E3%83%BC%E3%82%93" target="_blank">Blog</NextLink></li>
             </ul>
         )
     } else if (page === "work") {
@@ -44,7 +44,7 @@ const Header: React.FC<Page> = (props) => {
                 <li><NextLink href="../about">About</NextLink></li>
                 <li><NextLink href="../skill">Skill</NextLink></li>
                 <li className="text-white"><NextLink href="../work">Work</NextLink></li>
-                <li><NextLink href="../blog">Blog</NextLink></li>
+                <li><NextLink href="https://www.jackapp.jp/blog/writer/%E3%81%BE%E3%81%93%E3%81%A1%E3%82%83%E3%83%BC%E3%82%93" target="_blank">Blog</NextLink></li>
             </ul>
         )
     } else if (page === "blog") {
@@ -54,7 +54,7 @@ const Header: React.FC<Page> = (props) => {
                 <li><NextLink href="../about">About</NextLink></li>
                 <li><NextLink href="../skill">Skill</NextLink></li>
                 <li><NextLink href="../work">Work</NextLink></li>
-                <li className="text-white"><NextLink href="../blog">Blog</NextLink></li>
+                <li className="text-white"><NextLink href="https://www.jackapp.jp/blog/writer/%E3%81%BE%E3%81%93%E3%81%A1%E3%82%83%E3%83%BC%E3%82%93">Blog</NextLink></li>
             </ul>
         )
     }

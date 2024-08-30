@@ -16,6 +16,8 @@ const config: Config = {
       animation: {
         "line-from-center": "line-from-center 4s forwards",
         "line-flow" : "line-flow 2.0s ease-in-out infinite",
+        "slide-from-right" :"slide-from-right 3s forwards",
+        "slide-from-left" :"slide-from-left 3s forwards",
       },
       keyframes: {
         "line-from-center": {
@@ -45,6 +47,16 @@ const config: Config = {
             "top": "80px",
             "opacity": "0",
             "width": "3px"
+          },
+        },
+        "slide-from-left": {
+          "0%": {
+            "transform": "translateX(-100%)",
+            "opacity": "0",
+          },
+          "100%": {
+            "transform": "translateX(0)",
+            "opacity": "1",
           },
         },
       },

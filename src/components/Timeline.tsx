@@ -54,6 +54,7 @@ const Timeline = () => {
           <dt>2022/05</dt>
           <dd><h1 className="my-2 font-bold text-xl">サークルメンバー4人で「よりみちず ver.1」を開発</h1>
           サークル加入後最初のハッカソンで作ったものこそが「よりみちず」の始まりでした。当時は白背景に出発地と目的地を入れたら寄り道が適当に出てくるだけでした。</dd>
+          <img src='/yorimichizu1.png' className="rounded-md" />
           </SlideAnimationRight>
         </dl>
         <span className="border-line"></span>
@@ -91,19 +92,11 @@ const Timeline = () => {
       </li>
       <li>
         <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2023/07</dt>
-          <dd><h1 className="my-2 font-bold text-xl">「名古屋大学オープンキャンパスWeb2023」を受託開発</h1></dd>
-        </SlideAnimationRight>
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
           <SlideAnimationRight Threshold={0.5}>
           <dt>2023/07</dt>
           <dd><h1 className="my-2 font-bold text-xl">「よりみちず ver.2」を開発・リリース</h1>
-          ハッカソンにて作成したままであった「よりみちず ver.1」を再度自分の環境に作成し、そこからUIや追加機能を実装してver.2としてリリースしました。詳しくはWorkページよりご覧ください。</dd>
+          ハッカソンにて作成したままであった「よりみちず ver.1」を再度自分の環境に作成し、そこからUIや追加機能を実装してver.2としてリリースしました。
+          <WorkTab route="./work/Yorimichizu" image="/yorimichizu.png" title="よりみちず" year="2023/10" target="0"/></dd>
           </SlideAnimationRight>
         </dl>
         <span className="border-line"></span>
@@ -134,7 +127,7 @@ const Timeline = () => {
         <SlideAnimationRight Threshold={0.5}>
           <dt>2023/04</dt>
           <dd><h1 className="my-2 font-bold text-xl">「名古屋大学しんかんWeb2024」を受託開発</h1>
-          名古屋大学生協学生委員会様からお声かけ頂き、再び新入生向けの情報サイトの作成に携わりました。今回は制作の総監督を務め、土台の整備、大まかなデザインの決定、マイルストーンの設定、コードの微修正などを担いました。
+          再度、名古屋大学生協学生委員会様からお声かけ頂き、再び新入生向けの情報サイトの作成に携わりました。今回は制作の総監督を務め、土台の整備、大まかなデザインの決定、マイルストーンの設定、コードの微修正などを担いました。
           <WorkTab route="./work/Shinkan-web-2024" image="/shinkanweb2024.png" title="名古屋大学しんかんWeb2024" year="2024/04" target="0"/></dd>
           </SlideAnimationRight>        
         </dl>
@@ -145,7 +138,9 @@ const Timeline = () => {
         <SlideAnimationRight Threshold={0.5}>
           <dt>2024/07</dt>
           <dd><h1 className="my-2 font-bold text-xl">シンガポールに留学</h1>
-          情報学部にて今年度から開始された2週間のシンガポール研修プランに参加しました。名古屋大学と提携を結び、深くつながっているシンガポール国立大学様にて10日間の研修を行い、Google・Microsoft・AWSのシンガポールオフィスに見学へも行きました。研修を通じて、異国文化を知る良い機会となりました。</dd>
+          情報学部にて今年度から開始された2週間のシンガポール研修プランに参加しました。名古屋大学と提携を結び、深くつながっているシンガポール国立大学様にて10日間の研修を行い、Google・Microsoft・AWSのシンガポールオフィスに見学へも行きました。研修を通じて、異国文化を知る良い機会となりました。
+          <img src="/singapore_sensored.jpg" className="rounded-md" />
+          </dd>
           </SlideAnimationRight>        
         </dl>
         <span className="border-line"></span>

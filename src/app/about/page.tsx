@@ -24,7 +24,7 @@ export default function About() {
                 <div className="flex-col ml-12 text-center">
                     <h1 className="font-extrabold mb-8 text-7xl text-blue-800">私について</h1>
                     <p className="text-2xl mb-8">{process.env.NAME}</p>
-                    <p className="text-xl mb-8">{process.env.BIRTHDAY}生まれ</p>
+                    <p className="text-xl mb-8">{process.env.BIRTHDAY}, 愛知県生まれ</p>
                     <p className="text-xl mb-8">{process.env.BELONG}</p>
                 </div>
               </div>
@@ -46,6 +46,7 @@ export default function About() {
         </div>
         
         <h1 className="mt-10 text-2xl mb-4 font-semibold">アカウント</h1>
+        <p className="my-4 text-md">　ご連絡等ございましたら、以下のリンク先又はメール( {process.env.MAIL} )よりご連絡ください。</p>
         <div className="mb-20 flex flex-col items-center">
                     
                     <div className="flex flex-col items-center">

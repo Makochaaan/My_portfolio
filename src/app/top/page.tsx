@@ -11,12 +11,6 @@ export default function Top() {
 
     return (
             <main className="flex flex-col items-center px-60">
-                <GlobalStyle />
-                <LoadStrAnimation >
-                    <h1 className="text-white text-8xl font-bold">こんにちは</h1>
-                </LoadStrAnimation>
-                <LoadAnimation classContent="absolute inset-0 z-20 bg-gradient-to-l from-blue-800 to-blue-500"></LoadAnimation>
-                
                 <Header page="top"/>
                 <div className="mt-60 z-10 max-w-5xl items-center font-mono text-sm ">
                     <h1 className="text-8xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 inline-block text-transparent bg-clip-text">DEPONTES</h1><br></br>

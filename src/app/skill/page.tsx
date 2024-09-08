@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Header from "../../components/header";
-import NextLink from 'next/link'
-import WorkTab from "../../components/workTab";
 import Footer from "../../components/footer";
 
 export default function Work() { 
@@ -133,7 +131,7 @@ return (
                     after:absolute after:top-0 after:width-[3px] after:height-[60px] bg-blue-400 animate-line-flow opacity-0"></div>
             </div>
 
-            <div className="mt-80 flex-col min-h-screen">
+            <div className="mt-80 flex-col min-h-screen mb-20">
                 <h1 className="text-xl font-bold flex justify-center text-center text-blue-800">おまけ：自然言語</h1>
                 <div className="text-center relative 
                                before:absolute before:left-1/2 before:bt-0 before:width-0 before:border-b-2 before:border-blue-800 before:transform before:-translate-x-1/2 before:animate-line-from-center"
@@ -214,6 +212,11 @@ return (
                         <h1 className="font-bold text-center text-xl">韓国語</h1>
                         <h2 className="font-semibold text-center">技能レベル：読解レベル</h2>
                         <p className="font-medium text-center my-5">大学2年生の秋学期に学びました。音の響きとハングルの形状が好きで、今でもK-popの歌詞を通じて少しづつ勉強しています。</p>
+                    </div>
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                        <div className="flex justify-center mt-5 h-1/2">
+                        </div>
+                        <h1 className="font-bold text-center text-xl">引き続き勉強中...</h1>
                     </div>
                     
                 </div>

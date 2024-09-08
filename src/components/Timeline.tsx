@@ -40,6 +40,47 @@ const Timeline = () => {
       <li>
         <dl>
           <SlideAnimationRight Threshold={0.5}>
+          <dt>2019/04</dt>
+          <dd><h1 className="my-2 font-bold text-xl">愛知県立 岡崎北高校入学</h1>
+              愛知県岡崎市にある岡崎北高校に入学しました。高校入学後は、音楽部(合唱と軽音楽を行う部活)に所属し、テノールパート及びベースボーカルを担当しました。体育と美術のみ苦手でした。</dd>
+          </SlideAnimationRight>
+        </dl>
+        <span className="border-line"></span>
+      </li>
+      <li>
+        <dl>
+          <SlideAnimationRight Threshold={0.5}>
+          <dt>2020/02</dt>
+          <dd><h1 className="my-2 font-bold text-xl">岡崎北高校 音楽部 部長になる</h1>
+              音楽部の部長になりました。しかし、就任直後にコロナ禍に見舞われてしまい、部内イベントの中止、当年の全国大会への出場の中止を余儀なくされ、思うよう物事を進めることが出来ませんでした。ただその時の、限られた環境でどうするかを考える経験は今でも自分の中に活きていると感じています。</dd>
+          </SlideAnimationRight>
+        </dl>
+        <span className="border-line"></span>
+      </li>
+      <li>
+        <dl>
+          <SlideAnimationRight Threshold={0.5}>
+          <dt>2020/09</dt>
+          <dd><h1 className="my-2 font-bold text-xl">岡崎北高校 生徒会長になる</h1>
+              2学期となり、コロナとどう向き合っていくかで学校が不安に包まれている中、その不安定さをどうにかするためにどうすることができるのか。その答えとして、生徒会長に立候補して当選しました。コロナ禍で開催が危ぶまれた11月の学校祭を開催にこぎつけたり、女子生徒のスラックス着用許可、ツーブロックなど一部頭髪制限の撤廃などを実現したりしました。そこで経験した、人と議論をするといった経験は特に、今の考えを伝えられるという自分の能力にも生きていると感じています。</dd>
+          </SlideAnimationRight>
+        </dl>
+        <span className="border-line"></span>
+      </li>
+      <li>
+        <dl>
+          <SlideAnimationRight Threshold={0.5}>
+          <dt>2022/04</dt>
+          <dd><h1 className="my-2 font-bold text-xl">名古屋大学 情報学部 コンピュータ科学科入学</h1>
+              AI・プログラミングについて興味があり、当時珍しく「工学部」としてではなく、「情報学部」として独立した学部を持っていた名古屋大学へ入学しました。そして入学する際に、アプリ開発団体jackの存在を知り加入しました。それがアプリ開発者としての始まりです。
+              <image href=""></image></dd>
+          </SlideAnimationRight>
+        </dl>
+        <span className="border-line"></span>
+      </li>
+      <li>
+        <dl>
+          <SlideAnimationRight Threshold={0.5}>
           <dt>2022/04</dt>
           <dd><h1 className="my-2 font-bold text-xl">名古屋大学 情報学部 コンピュータ科学科入学</h1>
               AI・プログラミングについて興味があり、当時は珍しかった「情報学部」として独立した学部を持つ名古屋大学へ入学しました。入学する際に、アプリ開発団体jackの存在を知り加入しました。それがアプリ開発者としての始まりです。

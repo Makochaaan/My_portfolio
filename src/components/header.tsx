@@ -60,7 +60,7 @@ const Header: React.FC<Page> = (props) => {
     }
     return (
         <header className="w-full flex items-center justify-between p-4 text-blue-800">
-            <h1 className="text-2xl font-bold">TITLE</h1>
+            <h1 className="text-2xl font-bold">DEPONTES' PORTFOLIO</h1>
             <nav>
                 {list_component}
             </nav>

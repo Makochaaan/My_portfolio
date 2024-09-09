@@ -1,3 +1,4 @@
+"use client";
 import Top from "../en/top/page";
 import GlobalStyle from "../../components/GlobalStyles";
 import {LoadAnimation, LoadStrAnimation} from "../../animation/loadAnimation";

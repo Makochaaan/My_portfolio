@@ -20,20 +20,20 @@ export const LoadAnimation = (props: loadAnimationType) => {
 
 const loadKeyframes = keyframes`
   0% {
-    transform-origin:left;
-		transform:scaleX(0);
+    transform-origin: left;
+		transform: scaleX(0);
   }
   25% {
-    transform-origin:left;
-		transform:scaleX(1);
+    transform-origin: left;
+		transform: scaleX(1);
   }
   75% {
-    transform-origin:right;
-		transform:scaleX(1);
+    transform-origin: right;
+		transform: scaleX(1);
   }
   100% {
-    transform-origin:right;
-		transform:scaleX(0);
+    transform-origin: right;
+		transform: scaleX(0);
 
   }
 `;

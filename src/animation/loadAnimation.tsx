@@ -39,7 +39,13 @@ const loadKeyframes = keyframes`
 `;
 
 const LoadAnim = styled.div`
-  animation: ${loadKeyframes} 2s forwards;
+  animation: ${loadKeyframes} 4.5s forwards;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
 `;
 
 // ---
@@ -83,7 +89,7 @@ const LoadStr = keyframes`
 
 
 const LoadStrAnim = styled.div`
-  animation: ${LoadStr} 2.5s forwards;
+  animation: ${LoadStr} 5s forwards;
   display: flex;
   justify-content: center;
   align-items: center;

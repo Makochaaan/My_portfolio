@@ -23,9 +23,9 @@ export default function About() {
                 />
                 <div className="flex-col ml-12 text-center">
                     <h1 className="font-extrabold mb-8 text-7xl text-blue-800">ABOUT ME</h1>
-                    <p className="text-2xl mb-8">{process.env.NAME}</p>
-                    <p className="text-xl mb-8">{process.env.BIRTHDAY}, Born in Japan</p>
-                    <p className="text-xl mb-8">{process.env.BELONG_EN}</p>
+                    <p className="text-2xl mb-8">{process.env.NEXT_PUBLIC_NAME}</p>
+                    <p className="text-xl mb-8">{process.env.NEXT_PUBLIC_BIRTHDAY}, Born in Japan</p>
+                    <p className="text-xl mb-8">{process.env.NEXT_PUBLIC_BELONG_EN}</p>
                     <p className="text-xl mb-8">Total GPA: 3.86</p>
                 </div>
               </div>
@@ -33,7 +33,7 @@ export default function About() {
         <FadeinAnimation>
         <div className="mt-10 flex-col place-items-center ">
             <h1 className="text-2xl mb-4 font-semibold">INTRODUCE</h1>
-            <p >　Thank you for watching this page. My name is {process.env.NAME}. I&#39;m Brazilian-Japanese. I&#39;m a 3rd year student of Nagoya University, faculty of Informatics. I&#39;ve been specializing at signal analysis, especially as for electric insturments, and effectors.</p>
+            <p >　Thank you for watching this page. My name is {process.env.NEXT_PUBLIC_NAME}. I&#39;m Brazilian-Japanese. I&#39;m a 3rd year student of Nagoya University, faculty of Informatics. I&#39;ve been specializing at signal analysis, especially as for electric insturments, and effectors.</p>
             <p>　I&#39;m a member of application development circle &#34;jack&#34; and make some application. Also, I play bass and sing at a band circle.</p>
             <p>　I&#39;m glad you to watch my masterpieces from &#34;WORK&#34; page. If you want to contact me, please send messages to accounts below.</p>
         </div>
@@ -74,23 +74,23 @@ export default function About() {
         </div>
         
         <h1 className="mt-10 text-2xl mb-4 font-semibold">ACCOUNT</h1>
-        <p className="my-4 text-md">　If you want to contact me, please send messages to accounts below, or to the e-mail( {process.env.MAIL} ).</p>
+        <p className="my-4 text-md">　If you want to contact me, please send messages to accounts below, or to the e-mail( {process.env.NEXT_PUBLIC_MAIL} ).</p>
         <div className="mb-20 flex flex-col items-center">
                     
                     <div className="flex flex-col items-center">
-                        <a href={process.env.LINKEDIN|| '#'} target="_blank" className="mt-10 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full inline-flex items-center rounded-full">
+                        <a href={process.env.NEXT_PUBLIC_LINKEDIN|| '#'} target="_blank" className="mt-10 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full inline-flex items-center rounded-full">
                         <img className="fill-current w-7 h-6 mr-2" src="/LI-In-mark.png" alt="LinkedIn Logo" />
                             <span>LinkedIn</span>
                         </a><br></br>
-                        <a href={process.env.GITHUB|| '#'} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full rounded-full inline-flex items-center">
+                        <a href={process.env.NEXT_PUBLIC_GITHUB|| '#'} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full rounded-full inline-flex items-center">
                             <img className="fill-current w-6 h-6 mr-2" src="/github-mark.svg" alt="Github Logo" />
                             <span>Github</span>
                         </a><br></br>
-                        <a href={process.env.INSTAGRAM|| '#'} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full rounded-full inline-flex items-center">
+                        <a href={process.env.NEXT_PUBLIC_INSTAGRAM|| '#'} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full rounded-full inline-flex items-center">
                         <img className="fill-current w-6 h-6 mr-2" src="/Instagram_mark.svg" alt="Instagram Logo" />
                             <span>Instagram</span>
                         </a><br></br>
-                        <a href={process.env.JACK|| '#'} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full rounded-full inline-flex items-center">
+                        <a href={process.env.NEXT_PUBLIC_JACK|| '#'} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full rounded-full inline-flex items-center">
                         <img className="fill-current w-6 h-6 mr-2 rounded-md" src="/jack_mark.png" alt="jack Logo" />
                             <span>jack</span>
                         </a><br></br>

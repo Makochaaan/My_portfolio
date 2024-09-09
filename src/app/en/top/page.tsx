@@ -34,9 +34,9 @@ export default function Top() {
                         <SlideAnimationRight>
                         <div className="flex-col ml-12 text-center animate-slide-from-right">
                             <h2 className="text-center font-bold text-xl">I&#39;m...</h2>
-                            <h1 className="font-extrabold mb-8 text-5xl text-blue-800">{process.env.NAME}</h1>
-                            {/* <p className="text-16 mb-8">{process.env.NAME}</p> */}
-                            <p className="mb-8">{process.env.BELONG_EN}</p>
+                            <h1 className="font-extrabold mb-8 text-5xl text-blue-800">{process.env.NEXT_PUBLIC_NAME}</h1>
+                            {/* <p className="text-16 mb-8">{process.env.NEXT_PUBLIC_NAME}</p> */}
+                            <p className="mb-8">{process.env.NEXT_PUBLIC_BELONG_EN}</p>
                             <p className="mb-16"></p>
                             <NextLink href="../about" className="bg-gray-300 hover:bg-gray-200 rounded-xl p-5 text-blue-800 font-bold hover:text-blue-400 hover:duration-500 border border-blue-800 hover:border-blue-400">ABOUT ME →</NextLink>
                         </div>
@@ -76,19 +76,19 @@ export default function Top() {
                     <div className="pt-20 mb-20 flex flex-col items-center">
                         <h1 className="mb-10 font-bold text-3xl">CONTACT</h1>
                         <div className="flex flex-col items-center">
-                            <a href={process.env.LINKEDIN} target="_blank" className="mt-10 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full inline-flex items-center rounded-full">
+                            <a href={process.env.NEXT_PUBLIC_LINKEDIN} target="_blank" className="mt-10 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full inline-flex items-center rounded-full">
                             <img className="fill-current w-7 h-6 mr-2" src="/LI-In-mark.png" alt="LinkedIn Logo" />
                                 <span>LinkedIn</span>
                             </a><br></br>
-                            <a href={process.env.GITHUB} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full rounded-full inline-flex items-center">
+                            <a href={process.env.NEXT_PUBLIC_GITHUB} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full rounded-full inline-flex items-center">
                                 <img className="fill-current w-6 h-6 mr-2" src="/github-mark.svg" alt="Github Logo" />
                                 <span>Github</span>
                             </a><br></br>
-                            <a href={process.env.INSTAGRAM} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full rounded-full inline-flex items-center">
+                            <a href={process.env.NEXT_PUBLIC_INSTAGRAM} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full rounded-full inline-flex items-center">
                             <img className="fill-current w-6 h-6 mr-2" src="/Instagram_mark.svg" alt="Instagram Logo" />
                                 <span>Instagram</span>
                             </a><br></br>
-                            <a href={process.env.JACK} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full rounded-full inline-flex items-center">
+                            <a href={process.env.NEXT_PUBLIC_JACK} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-40 w-full rounded-full inline-flex items-center">
                             <img className="fill-current w-6 h-6 mr-2 rounded-md" src="/jack_mark.png" alt="jack Logo" />
                                 <span>jack</span>
                             </a><br></br>

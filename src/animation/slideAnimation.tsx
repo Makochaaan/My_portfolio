@@ -38,7 +38,7 @@ const slideInRight = keyframes`
 `;
 
 const SlideAnimRight = styled.span<{ inView: boolean }>`
-  ${(props) => props.inView ? css`animation: ${slideInRight} .5s forwards;` : ""}
+  ${(props) => props.inView ? css`animation: ${slideInRight} 3s forwards;` : ""}
 `;
 
 type slideAnimationLeftType = {

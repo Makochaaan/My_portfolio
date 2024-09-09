@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect } from 'react';
-import '../app/globals.css';
 import WorkTab from "../components/workTab";
 import { SlideAnimationRight } from '../animation/slideAnimation';
 
@@ -73,17 +72,6 @@ const Timeline = () => {
           <dt>2022/04</dt>
           <dd><h1 className="my-2 font-bold text-xl">名古屋大学 情報学部 コンピュータ科学科入学</h1>
               AI・プログラミングについて興味があり、当時珍しく「工学部」としてではなく、「情報学部」として独立した学部を持っていた名古屋大学へ入学しました。そして入学する際に、アプリ開発団体jackの存在を知り加入しました。それがアプリ開発者としての始まりです。
-              <image href=""></image></dd>
-          </SlideAnimationRight>
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-          <SlideAnimationRight Threshold={0.5}>
-          <dt>2022/04</dt>
-          <dd><h1 className="my-2 font-bold text-xl">名古屋大学 情報学部 コンピュータ科学科入学</h1>
-              AI・プログラミングについて興味があり、当時は珍しかった「情報学部」として独立した学部を持つ名古屋大学へ入学しました。入学する際に、アプリ開発団体jackの存在を知り加入しました。それがアプリ開発者としての始まりです。
               <image href=""></image></dd>
           </SlideAnimationRight>
         </dl>

@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/*タイムライン全体の設定*/
+.timeline{
+	/* max-width: 1000px; */
+	width:100%;
+	margin:50px auto;
+	padding:0 30px;
+}
+
+.timeline li{
+    /*線の起点とするためrelativeを設定*/
+    position: relative;
+	list-style: none;
+	padding:0 0 20px 0;
+}
+
+.timeline dl{
+	margin:0 0 20px 3em;
+}
+
+/*絶対配置で線を設定*/
+.border-line {
+    /*線の位置*/
+	position: absolute;
+	left:0.2em;
+	top:0;
+	width:2px;/*線の太さ*/
+	height:0;/*はじめは高さを0に*/
+	background: #ccc;
+}
+
+/*タイムラインの見出し横の丸の位置と形状*/
+.timeline li::after{
+	content:'';
+	position: absolute;
+	top:0;
+	left:0;
+	width:10px;
+	height: 10px;
+	background:#666;
+	border-radius: 50%;
+}

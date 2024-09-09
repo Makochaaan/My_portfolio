@@ -1,60 +1,59 @@
 import NextLink from 'next/link'
+import { NextRequest } from 'next/server';
 
 type Page = {
     page: string,
+    lang?: string
 };
 
 const Header: React.FC<Page> = (props) => {
     let page: string = props.page
+    let lang: string | undefined = props.lang
+    if (lang === undefined) {lang = "jp"}
     let list_component: JSX.Element | undefined
+
     if (page === "top") {
         list_component = (
             <ul className="flex gap-6">
-                <li className="text-white"><NextLink href="../top">Top</NextLink></li>
-                <li><NextLink href="../about">About</NextLink></li>
-                <li><NextLink href="../skill">Skill</NextLink></li>
-                <li><NextLink href="../work">Work</NextLink></li>
+                <li className="text-white"><NextLink href={`../${lang}/top`}>Top</NextLink></li>
+                <li><NextLink href={`../${lang}/about`}>About</NextLink></li>
+                <li><NextLink href={`../${lang}/skill`}>Skill</NextLink></li>
+                <li><NextLink href={`../${lang}/work`}>Work</NextLink></li>
                 <li><NextLink href="https://www.jackapp.jp/blog/writer/%E3%81%BE%E3%81%93%E3%81%A1%E3%82%83%E3%83%BC%E3%82%93" target="_blank">Blog</NextLink></li>
+                <li><NextLink className="hover:text-blue-500 duration-100" href="../jp">JP</NextLink> / <NextLink  className="hover:text-blue-500 duration-100" href="../en">EN</NextLink> / <NextLink  className="hover:text-blue-500 duration-100" href="../pr">PR</NextLink></li>
             </ul>
         )
     } else if (page === "about") {
         list_component = (
             <ul className="flex gap-6">
-                <li><NextLink href="../top">Top</NextLink></li>
-                <li className="text-white"><NextLink href="../about">About</NextLink></li>
-                <li><NextLink href="../skill">Skill</NextLink></li>
-                <li><NextLink href="../work">Work</NextLink></li>
+                <li><NextLink href={`../${lang}/top`}>Top</NextLink></li>
+                <li className="text-white"><NextLink href={`../${lang}/about`}>About</NextLink></li>
+                <li><NextLink href={`../${lang}/skill`}>Skill</NextLink></li>
+                <li><NextLink href={`../${lang}/work`}>Work</NextLink></li>
                 <li><NextLink href="https://www.jackapp.jp/blog/writer/%E3%81%BE%E3%81%93%E3%81%A1%E3%82%83%E3%83%BC%E3%82%93" target="_blank">Blog</NextLink></li>
+                <li><NextLink className="hover:text-blue-500 duration-100" href="../jp">JP</NextLink> / <NextLink  className="hover:text-blue-500 duration-100" href="../en">EN</NextLink> / <NextLink  className="hover:text-blue-500 duration-100"  href="../pr">PR</NextLink></li>
             </ul>
         )
     } else if (page === "skill") {
         list_component = (
             <ul className="flex gap-6">
-                <li><NextLink href="../top">Top</NextLink></li>
-                <li><NextLink href="../about">About</NextLink></li>
-                <li className="text-white"><NextLink href="../skill">Skill</NextLink></li>
-                <li><NextLink href="../work">Work</NextLink></li>
+                <li><NextLink href={`../${lang}/top`}>Top</NextLink></li>
+                <li><NextLink href={`../${lang}/about`}>About</NextLink></li>
+                <li className="text-white"><NextLink href={`../${lang}/skill`}>Skill</NextLink></li>
+                <li><NextLink href={`../${lang}/work`}>Work</NextLink></li>
                 <li><NextLink href="https://www.jackapp.jp/blog/writer/%E3%81%BE%E3%81%93%E3%81%A1%E3%82%83%E3%83%BC%E3%82%93" target="_blank">Blog</NextLink></li>
+                <li><NextLink className="hover:text-blue-500 duration-100" href="../jp">JP</NextLink> / <NextLink  className="hover:text-blue-500 duration-100" href="../en">EN</NextLink> / <NextLink className="hover:text-blue-500 duration-100" href="../pr">PR</NextLink></li>
             </ul>
         )
     } else if (page === "work") {
         list_component = (
             <ul className="flex gap-6">
-                <li><NextLink href="../top">Top</NextLink></li>
-                <li><NextLink href="../about">About</NextLink></li>
-                <li><NextLink href="../skill">Skill</NextLink></li>
-                <li className="text-white"><NextLink href="../work">Work</NextLink></li>
+                <li><NextLink href={`../${lang}/top`}>Top</NextLink></li>
+                <li><NextLink href={`../${lang}/about`}>About</NextLink></li>
+                <li><NextLink href={`../${lang}/skill`}>Skill</NextLink></li>
+                <li className="text-white"><NextLink href={`../${lang}/work`}>Work</NextLink></li>
                 <li><NextLink href="https://www.jackapp.jp/blog/writer/%E3%81%BE%E3%81%93%E3%81%A1%E3%82%83%E3%83%BC%E3%82%93" target="_blank">Blog</NextLink></li>
-            </ul>
-        )
-    } else if (page === "blog") {
-        list_component = (
-            <ul className="flex gap-6">
-                <li><NextLink href="../top">Top</NextLink></li>
-                <li><NextLink href="../about">About</NextLink></li>
-                <li><NextLink href="../skill">Skill</NextLink></li>
-                <li><NextLink href="../work">Work</NextLink></li>
-                <li className="text-white"><NextLink href="https://www.jackapp.jp/blog/writer/%E3%81%BE%E3%81%93%E3%81%A1%E3%82%83%E3%83%BC%E3%82%93">Blog</NextLink></li>
+                <li><NextLink className="hover:text-blue-500 duration-100" href="../jp">JP</NextLink> / <NextLink href="../en">EN</NextLink> / <NextLink className="hover:text-blue-500 duration-100" href="../pr">PR</NextLink></li>
             </ul>
         )
     }

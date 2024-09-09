@@ -38,7 +38,7 @@ export default function Top() {
                             {/* <p className="text-16 mb-8">{process.env.NAME}</p> */}
                             <p className="mb-8">{process.env.BELONG_EN}</p>
                             <p className="mb-16"></p>
-                            <NextLink href="../about" className="bg-gray-300 hover:bg-gray-200 rounded-xl p-5 text-blue-800 font-bold hover:text-blue-400 hover:duration-500 border border-blue-800 hover:border-blue-400">もっと知る →</NextLink>
+                            <NextLink href="../about" className="bg-gray-300 hover:bg-gray-200 rounded-xl p-5 text-blue-800 font-bold hover:text-blue-400 hover:duration-500 border border-blue-800 hover:border-blue-400">ABOUT ME →</NextLink>
                         </div>
                         </SlideAnimationRight>
                     </div>

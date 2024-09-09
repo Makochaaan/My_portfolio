@@ -8,7 +8,7 @@ import React, { useEffect } from 'react';
 export default function About() {
   return (
     <main className="flex flex-col items-center px-60">
-      <Header page="about" lang="en"/>
+      <Header page="about" lang="pt-BR"/>
       <div className="z-10 w-full max-w-5xl items-center font-medium lg:flex-col">
         
             <FadeinAnimation>

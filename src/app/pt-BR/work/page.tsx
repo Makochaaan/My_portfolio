@@ -8,7 +8,7 @@ export default function Work() {
 
 return (
         <main className="flex flex-col items-center px-60">
-            <Header page="work" lang="en"/>
+            <Header page="work" lang="pt-BR"/>
             <div className="mt-20 flex-col min-h-screen">
                 <h1 className="text-xl font-bold flex justify-center text-center text-blue-800">WORK of APPLICATION</h1>
                 <div className="text-center relative 

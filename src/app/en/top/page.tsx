@@ -33,7 +33,7 @@ export default function Top() {
                         </SlideAnimationLeft>
                         <SlideAnimationRight>
                         <div className="flex-col ml-12 text-center animate-slide-from-right">
-                            <h2 className="text-center font-bold text-xl">I'm...</h2>
+                            <h2 className="text-center font-bold text-xl">I&#39;m...</h2>
                             <h1 className="font-extrabold mb-8 text-5xl text-blue-800">{process.env.NAME}</h1>
                             {/* <p className="text-16 mb-8">{process.env.NAME}</p> */}
                             <p className="mb-8">{process.env.BELONG_EN}</p>

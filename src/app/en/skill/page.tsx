@@ -54,7 +54,7 @@ return (
                             />
                         </div>
                         <h1 className="font-bold text-center text-xl">Java</h1>
-                        <p className="font-medium text-center my-5">I sometimes use. It's one of the my favorite languages. I can write almost processing watching documents, but sometimes get in trouble.</p>
+                        <p className="font-medium text-center my-5">I sometimes use. It&#39;s one of the my favorite languages. I can write almost processing watching documents, but sometimes get in trouble.</p>
                     </div>
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
@@ -96,7 +96,7 @@ return (
                             />
                         </div>
                         <h1 className="font-bold text-center text-xl">Flutter</h1>
-                        <p className="font-medium text-center my-5">I made smartphone application using this framework. That's my favorite. I can write almost processing watching documents, but sometimes get in trouble.</p>
+                        <p className="font-medium text-center my-5">I made smartphone application using this framework. That&#39;s my favorite. I can write almost processing watching documents, but sometimes get in trouble.</p>
                     </div>
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
@@ -171,7 +171,7 @@ return (
                         </div>
                         <h1 className="font-bold text-center text-xl">Portuguese</h1>
                         <h2 className="font-semibold text-center">Level: B1-Intermediate</h2>
-                        <p className="font-medium text-center my-5">I can talk in daily conversations. It's my father's mother tongue.</p>
+                        <p className="font-medium text-center my-5">I can talk in daily conversations. It&#39;s my father&#39;s mother tongue.</p>
                     </div>
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
@@ -186,7 +186,7 @@ return (
                         </div>
                         <h1 className="font-bold text-center text-xl">Italian</h1>
                         <h2 className="font-semibold text-center">Level: A2-Pre Intermediate</h2>
-                        <p className="font-medium text-center my-5">I can read and talk a little. I love Maneskin and that's why I learn.</p>
+                        <p className="font-medium text-center my-5">I can read and talk a little. I love Maneskin and that&#39;s why I learn.</p>
                     </div>
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">

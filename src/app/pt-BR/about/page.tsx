@@ -33,9 +33,9 @@ export default function About() {
         <FadeinAnimation>
         <div className="mt-10 flex-col place-items-center ">
             <h1 className="text-2xl mb-4 font-semibold">INTRODUCE</h1>
-            <p >　Thank you for watching this page. My name is {process.env.NAME}. I'm Brazilian-Japanese. I'm a 3rd year student of Nagoya University, faculty of Informatics. I've been specializing at signal analysis, especially as for electric insturments, and effectors.</p>
-            <p>　I'm a member of application development circle "jack" and make some application. Also, I play bass and sing at a band circle.</p>
-            <p>　I'm glad you to watch my masterpieces from "WORK" page. If you want to contact me, please send messages to accounts below.</p>
+            <p >　Thank you for watching this page. My name is {process.env.NAME}. I&#39;m Brazilian-Japanese. I&#39;m a 3rd year student of Nagoya University, faculty of Informatics. I&#39;ve been specializing at signal analysis, especially as for electric insturments, and effectors.</p>
+            <p>　I&#39;m a member of application development circle &#34;jack&#34; and make some application. Also, I play bass and sing at a band circle.</p>
+            <p>　I&#39;m glad you to watch my masterpieces from &#34;WORK&#34; page. If you want to contact me, please send messages to accounts below.</p>
         </div>
         </FadeinAnimation>
         
@@ -45,8 +45,8 @@ export default function About() {
             </FadeinAnimation>
             <FadeinAnimation>
             <div className="flex items-center bg-gray-300 rounded-md my-20">
-              <p className="pl-10 pr-5 indent-2">In 2020: when I was 17 and was high school student, the Pandemic hit the world. All events were cancelled and we're in a kind of "panic", so there're a lot of problems. <br></br>
-              　As a member of the high school, I cannot ignore these problems. So, I ran for election and became a school comittee president. I led my school and changed several "ridiculous" rules which was not matched to post-pandemic society. That's the time I started my career as a "leader".</p>
+              <p className="pl-10 pr-5 indent-2">In 2020: when I was 17 and was high school student, the Pandemic hit the world. All events were cancelled and we&#39;re in a kind of &#34;panic&#34;, so there&#39;re a lot of problems. <br></br>
+              　As a member of the high school, I cannot ignore these problems. So, I ran for election and became a school comittee president. I led my school and changed several &#34;ridiculous&#34; rules which was not matched to post-pandemic society. That&#39;s the time I started my career as a &#34;leader&#34;.</p>
               <img src="/kita.jpg" className="w-1/2 rounded-r-md" />
             </div>
             </FadeinAnimation>
@@ -60,15 +60,15 @@ export default function About() {
             </FadeinAnimation>
             <FadeinAnimation>
             <div className="flex items-center bg-gray-300 rounded-md mt-40">
-              <p className="pl-10 pr-5 indent-2">Since I join jack, I've developed a lot of applications. As of 31/08/2024, I've developed 9 applications, and 4 applications are released on web. Please check these 4 applications on WORK page.</p>
+              <p className="pl-10 pr-5 indent-2">Since I join jack, I&#39;ve developed a lot of applications. As of 31/08/2024, I&#39;ve developed 9 applications, and 4 applications are released on web. Please check these 4 applications on WORK page.</p>
               <div className="grid grid-cols-2"><img src="/yorimichizu.png"/><img src="/mynewgear.png" className="rounded-tr-md"/><img src="/shinkanweb2023.png"/><img src="/shinkanweb2024.png" className="rounded-br-md"/></div>
             </div>
             </FadeinAnimation>
             <FadeinAnimation>
             <div className=" bg-gray-300 rounded-md mt-40 grid grid-cols-2 items-center">
-              <img src="/matsuriba.jpg" /><p className="pl-10 pr-5 indent-2">As an university student, I've joined a lot of events held at the outside of universtity. In 2023, I and my friends of other universities started an event in Nagoya called "Matsuriba". Matsuriba is the event to gather student engineers and make collaborations. I believe that led Nagoya to be full of innovations.</p>
+              <img src="/matsuriba.jpg" /><p className="pl-10 pr-5 indent-2">As an university student, I&#39;ve joined a lot of events held at the outside of universtity. In 2023, I and my friends of other universities started an event in Nagoya called "Matsuriba". Matsuriba is the event to gather student engineers and make collaborations. I believe that led Nagoya to be full of innovations.</p>
               <p className="pl-10 pr-5 indent-2">In 2024, I flew to Singapore and studied at NUS for 2 weeks. In Singapore, I visited the Singapore office of Google, Microsoft, AWS, and Toyota-Tusho. I studied not only IT skills, but also entreprenuership and management through this 2-week-stay. That was precious experience, I think.<br></br>
-              　To join these events makes me more sensitive and gives me deep understandings and precious connections, I think. That's why I actively join many envents.</p><img src="/google.jpg"  />
+              　To join these events makes me more sensitive and gives me deep understandings and precious connections, I think. That&#39;s why I actively join many envents.</p><img src="/google.jpg"  />
             </div>
             </FadeinAnimation>
         </div>

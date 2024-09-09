@@ -47,7 +47,7 @@ export default function Top() {
                         <h1 className="mb-10 font-bold text-3xl text-center">TRABALHOS</h1>
                         <div className="grid text-center lg:mb-10 lg:w-full lg:max-w-5xl lg:grid-cols-2 lg:text-left lg:gap-10">
                             <div className="relative group">
-                                <a href="./work/Yorimichizu" rel="noopener noreferrer">
+                                <a href="https://yorimichizu.up.railway.app" rel="noopener noreferrer" target="_blank">
                                     <img src="/yorimichizu.png" className="rounded-md border-2 border-indigo-600" />
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <div className="flex items-center absolute bottom-0 right-0 bg-indigo-500/70 flex-col px-16 py-2 rounded-tl-lg rounded-br-lg text-white">
@@ -58,7 +58,7 @@ export default function Top() {
                                 </a>
                             </div>
                             <div className="relative group">
-                                <a href="./work/My-new-gear" rel="noopener noreferrer">
+                                <a href="https://unityroom.com/games/my_new_gear" rel="noopener noreferrer" target="_blank">
                                     <img src="/mynewgear.png" className="rounded-md border-2 border-indigo-600" />
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <div className="flex items-center absolute bottom-0 right-0 bg-indigo-500/70 flex-col px-16 py-2 rounded-tl-lg rounded-br-lg text-white">

@@ -5,7 +5,7 @@ export default function ShinkanWeb2024() {
 
 return (
         <main className="flex flex-col items-center px-60">
-            <Header page="work"/>
+            <Header page="work-detail"/>
                 <div className="mt-20 flex-col min-h-screen">
                     <img src="/yorimichizu.png" className="w-full rounded-md" />
                     <div className="mt-20 z-10 max-w-5xl items-center font-mono text-sm ">

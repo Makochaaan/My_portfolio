@@ -23,7 +23,7 @@ export default function Top() {
                     <div className="mt-80 mb-20 z-10 flex place-items-center relative">
                         <SlideAnimationLeft>
                             <Image
-                                className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75 rounded-md"
+                                className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md"
                                 src="/myPhoto.jpg"
                                 alt="Next.js Logo"
                                 width={420}

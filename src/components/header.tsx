@@ -64,7 +64,7 @@ const Header: React.FC<Page> = (props) => {
                 <li><NextLink href={`../../${lang}/skill`}>Skill</NextLink></li>
                 <li className="text-white"><NextLink href={`../${lang}/work`}>Work</NextLink></li>
                 <li><NextLink href="https://www.jackapp.jp/blog/writer/%E3%81%BE%E3%81%93%E3%81%A1%E3%82%83%E3%83%BC%E3%82%93" target="_blank">Blog</NextLink></li>
-                <li><NextLink className="hover:text-blue-500 duration-100" href="../../ja">JP</NextLink> / <NextLink href="../en">EN</NextLink> / <NextLink className="hover:text-blue-500 duration-100" href="../pt-BR">PR</NextLink></li>
+                <li><NextLink className="hover:text-blue-500 duration-100" href="../../ja">JP</NextLink> / <NextLink href="../../en">EN</NextLink> / <NextLink className="hover:text-blue-500 duration-100" href="../../pt-BR">PR</NextLink></li>
             </ul>
         )
     }

@@ -7,7 +7,7 @@ import Footer from "../../../components/footer";
 export default function Work() { 
 
 return (
-        <main className="flex flex-col items-center px-60">
+        <main className="flex flex-col items-center px-4 md:px-60">
             <Header page="work"/>
             <div className="mt-20 flex-col min-h-screen">
                 <h1 className="text-xl font-bold flex justify-center text-center text-blue-800">アプリ開発作品</h1>

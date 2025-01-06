@@ -17,7 +17,7 @@ return (
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
-                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75 rounded-md "
+                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md "
                             src="/python.png"
                             alt="python"
                             width={150}
@@ -31,7 +31,7 @@ return (
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
-                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75 rounded-md "
+                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md "
                             src="/typescript.svg"
                             alt="typescript logo"
                             width={150}
@@ -45,7 +45,7 @@ return (
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
-                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75  "
+                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75  "
                             src="/java.svg"
                             alt="java logo"
                             width={150}
@@ -69,7 +69,7 @@ return (
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
-                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75 rounded-md "
+                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md "
                             src="/flask.svg"
                             alt="flask logo"
                             width={150}
@@ -83,7 +83,7 @@ return (
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
-                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75 rounded-md "
+                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md "
                             src="/react.svg"
                             alt="react logo"
                             width={150}
@@ -97,7 +97,7 @@ return (
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
-                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75  "
+                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75  "
                             src="/flutter.svg"
                             alt="flutter logo"
                             width={150}
@@ -111,7 +111,7 @@ return (
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
-                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75"
+                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75"
                             src="/unity.svg"
                             alt="unity logo"
                             width={150}
@@ -141,7 +141,7 @@ return (
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
-                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75 rounded-md "
+                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md "
                             src="/japan.png"
                             alt="japan"
                             width={320}
@@ -156,7 +156,7 @@ return (
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
-                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75 rounded-md "
+                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md "
                             src="/english.jpg"
                             alt="english"
                             width={320}
@@ -171,7 +171,7 @@ return (
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
-                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75  "
+                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75  "
                             src="/brazil.jpg"
                             alt="brazil"
                             width={320}
@@ -186,7 +186,7 @@ return (
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
-                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75"
+                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75"
                             src="/italia.png"
                             alt="italia"
                             width={320}
@@ -201,7 +201,7 @@ return (
                     <div className="bg-gray-300 flex-col p-4 rounded-lg">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
-                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert scale-75"
+                            className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75"
                             src="/korea.jpg"
                             alt="korea"
                             width={320}

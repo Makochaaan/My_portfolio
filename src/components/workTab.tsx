@@ -11,7 +11,7 @@ type Page = {
 const WorkTab: React.FC<Page> = ({route, image, title, year, target = 0}) => {
     if (target == "1") {
         return (
-            <div className="rounded-lg border-2 border-indigo-600">
+            <div className="rounded-lg border-2 border-indigo-600 my-2">
                 <NextLink href={route} target="_blank">
                     <div className="relative group">
                         <img src={image} className={"rounded-md"} />

@@ -10,6 +10,11 @@ return (
             <Header page="work-detail"/>
                 <div className="mt-20 flex-col min-h-screen">
                     <img src="/mynewgear.png" className="w-full rounded-md" />
+                    <div className="flex justify-center my-10">
+                        <div className="flex justify-center mx-5"><p className="text-xl font-bold">使用技術</p></div>
+                        <div className="flex justify-center mx-5"><img src="/unity.svg" className="h-6"></img><p className="text-xl">Unity</p></div>
+                        <div className="flex justify-center mx-5"><img src="/blender.png" className="h-6"></img><p className="text-xl">Blender</p></div>
+                    </div>
                     <div className="mt-20 z-10 max-w-5xl items-center font-mono text-sm text-center md:text-left">
                     <h1 className="flex justify-center text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-700 to-blue-950 text-transparent bg-clip-text">--My New GEAR--</h1><br></br>
                 </div>

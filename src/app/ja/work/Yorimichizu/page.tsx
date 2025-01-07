@@ -8,6 +8,14 @@ return (
             <Header page="work-detail"/>
                 <div className="mt-20 flex-col min-h-screen">
                     <img src="/yorimichizu.png" className="w-full rounded-md" />
+                    <div className="flex justify-center my-10">
+                        <div className="flex justify-center mx-5"><p className="text-xl font-bold">使用技術</p></div>
+                        <div className="flex justify-center mx-5"><img src="/HTML5.svg" className="h-6"></img><p className="text-xl">HTML</p></div>
+                        <div className="flex justify-center mx-5"><img src="/css.svg" className="h-6"></img><p className="text-xl">CSS</p></div>
+                        <div className="flex justify-center mx-5"><img src="/JavaScript.png" className="h-6"></img><p className="text-xl">JavaScript</p></div>
+                        <div className="flex justify-center mx-5"><img src="/python.png" className="h-6"></img><p className="text-xl">Python</p></div>
+                        <div className="flex justify-center mx-5"><img src="/googlemap.png" className="h-6"></img><p className="text-xl">Google Map API</p></div>
+                    </div>
                     <div className="mt-20 z-10 max-w-5xl items-center font-mono text-sm text-center md:text-left">
                     <h1 className="flex justify-center text-4xl md:text-6xl font-bold bg-gradient-to-r from-orange-300 to-orange-500 text-transparent bg-clip-text">--よりみちず--</h1><br></br>
                 </div>
@@ -29,9 +37,11 @@ return (
                     <h2 className="flex justify-center my-10 text-2xl md:text-4xl mt-20 font-semibold">ポイント</h2>
                     <ul className="list-disc list-inside text-sm md:text-base">
                         <li>Google Map APIを活用し，マップの表示，店情報の取得，オートコンプリート，店ジャンル指定，経路表示を実装しました．</li>
+                        <img src="/yorimichizu2.png" className="h-80"></img>
                         <li>デザインはオレンジを基調として暖色とし，シンプルで見やすい配色としました．</li>
                         <li>出発地の指定に現在地情報を利用できるようにしました．</li>
-                        <li>右上にポップアップ式の使い方説明を配置し，分かりやすさを追求しました．</li>
+                        <li>右上にポップアップ式の使い方説明を配置し，不慣れな人でも触りやすいようにしました．</li>
+                        <img src="/yorimichizu3.png" className="h-80"></img>
                     </ul>
                 </div>
             </div>

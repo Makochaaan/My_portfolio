@@ -7,7 +7,13 @@ return (
         <main className="flex flex-col items-center px-4 md:px-60">
             <Header page="work-detail"/>
                 <div className="mt-20 flex-col min-h-screen">
-                    <img src="/yorimichizu.png" className="w-full rounded-md" />
+                    <img src="/shinkanweb2024.png" className="w-full rounded-md" />
+                    <div className="flex justify-center my-10">
+                        <div className="flex justify-center mx-5"><p className="text-xl font-bold">使用技術</p></div>
+                        <div className="flex justify-center mx-5"><img src="/HTML5.svg" className="h-6"></img><p className="text-xl">HTML</p></div>
+                        <div className="flex justify-center mx-5"><img src="/css.svg" className="h-6"></img><p className="text-xl">CSS</p></div>
+                        <div className="flex justify-center mx-5"><img src="/JavaScript.png" className="h-6"></img><p className="text-xl">JavaScript</p></div>
+                    </div>
                     <div className="mt-20 z-10 max-w-5xl items-center font-mono text-sm text-center md:text-left">
                     <h1 className="flex justify-center text-4xl md:text-6xl font-bold bg-gradient-to-r from-pink-500 to-pink-700 text-transparent bg-clip-text">--しんかんWeb2024--</h1><br></br>
                 </div>

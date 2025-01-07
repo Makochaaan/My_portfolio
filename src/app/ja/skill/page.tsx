@@ -14,7 +14,7 @@ return (
                 ></div>
                 <div className="grid text-center lg:mb-10 lg:w-full lg:max-w-5xl lg:grid-cols-2 lg:text-left lg:gap-10 mt-5">
   
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
                             className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md "
@@ -28,7 +28,7 @@ return (
                         <h1 className="font-bold text-center text-lg md:text-xl">Python</h1>
                         <p className="font-medium text-center my-5 text-sm md:text-base">Web開発のバックエンドや、機械学習などに利用しています。最もよく使っている言語です。仕様書を見ながら1人で処理を書くことが出来ます。</p>
                     </div>
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
                             className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md "
@@ -42,7 +42,7 @@ return (
                         <h1 className="font-bold text-center text-lg md:text-xl">TypeScript(JavaScript)</h1>
                         <p className="font-medium text-center my-5 text-sm md:text-base">Webフロント開発によく使っています。Javascriptと違い型付けができ、役割を明示化できるのが好きなところです。仕様書を見ながら1人で処理を書くことが出来ます。</p>
                     </div>
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
                             className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75  "
@@ -66,7 +66,7 @@ return (
                 ></div>
                 <div className="grid text-center lg:mb-10 lg:w-full lg:max-w-5xl lg:grid-cols-2 lg:text-left lg:gap-10 mt-5">
   
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
                             className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md "
@@ -80,7 +80,7 @@ return (
                         <h1 className="font-bold text-center text-lg md:text-xl">Flask</h1>
                         <p className="font-medium text-center my-5 text-sm md:text-base">Pythonでバックエンド処理をする時に一番使うAPIです。Pythonを介することで、様々なAPIとの連携を取りやすくなり、Pythonの簡潔さを活かし処理を記載できるのが利点だと感じています。仕様書を見ながらある程度の処理を書くことが出来ます。</p>
                     </div>
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
                             className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md "
@@ -94,7 +94,7 @@ return (
                         <h1 className="font-bold text-center text-lg md:text-xl">React</h1>
                         <p className="font-medium text-center my-5 text-sm md:text-base">javascriptを用いたルーター処理にはReactを用います。豊富なライブラリで記述がしやすく、動的サイト生成に重きを置く際はFlaskよりもこちらを採用しています。仕様書を見ながらある程度の処理を書くことが出来ますが、まだ壁にぶつかる時があります。</p>
                     </div>
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
                             className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75  "
@@ -108,7 +108,7 @@ return (
                         <h1 className="font-bold text-center text-lg md:text-xl">Flutter</h1>
                         <p className="font-medium text-center my-5 text-sm md:text-base">モバイルアプリを作成する際に用いてます。シンプルなUIでかつ比較的簡単に成型が可能な点が気に入っています。仕様書を見ながらある程度の処理を書くことが出来ます。</p>
                     </div>
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
                             className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75"
@@ -138,7 +138,7 @@ return (
                 ></div>
                 <div className="grid text-center lg:mb-10 lg:w-full lg:max-w-5xl lg:grid-cols-2 lg:text-left lg:gap-10 mt-5">
   
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
                             className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md "
@@ -153,7 +153,7 @@ return (
                         <h2 className="font-semibold text-center text-sm md:text-base">技能レベル：ネイティブ</h2>
                         <p className="font-medium text-center my-5 text-sm md:text-base">母語です。日本語での言葉の表現は得意で、よくわかりやすい、深くまで表現できると他人から評価してもらっています。</p>
                     </div>
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
                             className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75 rounded-md "
@@ -168,7 +168,7 @@ return (
                         <h2 className="font-semibold text-center text-sm md:text-base">技能レベル：ビジネス・アカデミック会話レベル</h2>
                         <p className="font-medium text-center my-5 text-sm md:text-base">海外での日常会話や、アカデミックな場でのコミュニケーションができます。留学生の人によく上手だと褒めてもらっています。</p>
                     </div>
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
                             className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75  "
@@ -183,7 +183,7 @@ return (
                         <h2 className="font-semibold text-center text-sm md:text-base">技能レベル：日常会話レベル</h2>
                         <p className="font-medium text-center my-5 text-sm md:text-base">父方の言語で、高校生の時から習得を始めました。親戚との会話や、地域のブラジル人コミュニティでの交流で使っています。</p>
                     </div>
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
                             className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75"
@@ -198,7 +198,7 @@ return (
                         <h2 className="font-semibold text-center text-sm md:text-base">技能レベル：読解レベル</h2>
                         <p className="font-medium text-center my-5 text-sm md:text-base">大学2年生のころに学びました。イタリア語アーティストが好きなので、そのアーティストのカバーのために始めましたが、今は言語の響きそのものが気に入って続けています。</p>
                     </div>
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0">
                         <div className="flex justify-center mt-5 h-1/2">
                             <Image
                             className="dark:drop-shadow-[0_0_0.3rem_#ffffff70]  scale-75"
@@ -213,7 +213,7 @@ return (
                         <h2 className="font-semibold text-center text-sm md:text-base">技能レベル：読解レベル</h2>
                         <p className="font-medium text-center my-5 text-sm md:text-base">大学2年生の秋学期に学びました。音の響きとハングルの形状が好きで、今でもK-popの歌詞を通じて少しづつ勉強しています。</p>
                     </div>
-                    <div className="bg-gray-300 flex-col p-4 rounded-lg">
+                    <div className="bg-gray-300 flex-col p-4 rounded-lg my-4 md:my-0 h-full">
                         <div className="flex justify-center mt-5 h-1/2">
                         </div>
                         <h1 className="font-bold text-center text-lg md:text-xl">引き続き勉強中...</h1>

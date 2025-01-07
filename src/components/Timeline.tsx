@@ -168,9 +168,9 @@ const Timeline = () => {
         <SlideAnimationRight Threshold={0.5}>
           <dt>2024/07</dt>
           <dd><h1 className="my-2 font-bold text-xl">シンガポールに留学</h1>
-          情報学部にて今年度から開始された2週間のシンガポール研修プランに参加しました。名古屋大学と提携を結び、深くつながっているシンガポール国立大学様にて10日間の研修を行い、Google・Microsoft・AWSのシンガポールオフィスに見学へも行きました。研修を通じて、異国文化を知る良い機会となりました。
-          以下のリンクに、シンガポール研修の記事(英語)を名古屋大学の公式サイトにて掲載しています。
-          <NextLink href="https://en.nagoya-u.ac.jp/voice/nus_entrepreneurship.html" target="_blank">https://en.nagoya-u.ac.jp/voice/nus_entrepreneurship.html</NextLink>
+          情報学部にて今年度から開始された2週間のシンガポール研修プランに参加しました。名古屋大学と提携を結び、深くつながっているシンガポール国立大学様にて10日間の研修を行い、Google・Microsoft・AWSのシンガポールオフィスに見学へも行きました。研修を通じて、異国文化を知る良い機会となりました。<br/>
+          以下のリンクに、シンガポール研修の記事(英語)を名古屋大学の公式サイトにて掲載しています。<br/>
+          リンク：<NextLink href="https://en.nagoya-u.ac.jp/voice/nus_entrepreneurship.html" target="_blank">https://en.nagoya-u.ac.jp/voice/nus_entrepreneurship.html</NextLink>
           <img src="/singapore_sensored.jpg" className="rounded-md" />
           </dd>
           </SlideAnimationRight>        
@@ -193,8 +193,8 @@ const Timeline = () => {
           <dt>2024/10</dt>
           <dd><h1 className="my-2 font-bold text-xl">JPHACKS 2024に参加</h1>
           日本最大の学生ハッカソンであるJPHACKSに出場しました。そこで、jackに所属するサークルメンバと3人で、「駅くぐる」というアプリを開発しました。メンバーの間で出た、駅の改札の中と外にトイレやコンビニといったどんな設備があるかを可視化したいというアイデアを形にしました。
-          賞は惜しくも取れませんでしたが、普段研鑽している技術でここまで形にすることができ、とても楽しくいい経験になりました。</dd>
-          <img src="./" className="rounded-md" />
+          賞は惜しくも取れませんでしたが、普段研鑽している技術でここまで形にすることができ、とても楽しくいい経験になりました。
+          <img src="/ekikuguru.png" className="rounded-md" /></dd>
           </SlideAnimationRight>        
         </dl>
         <span className="border-line"></span>
@@ -204,8 +204,8 @@ const Timeline = () => {
         <SlideAnimationRight Threshold={0.5}>
           <dt>2024/11</dt>
           <dd><h1 className="my-2 font-bold text-xl">Syber Agent様主催のインターンイベントに参加</h1>
-          Syber Agent様が主催する、インフラ技術を体験するインターンイベントに参加しました。大学での実験でインフラ構築を体験したことから、とてもインフラ技術に対する関心が高まっていた中のため、とても身になる貴重な経験をさせていただきました。</dd>
-          <img src="./" className="rounded-md" />
+          Syber Agent様が主催する、インフラ技術を体験するインターンイベントに参加しました。大学での実験でインフラ構築を体験したことから、とてもインフラ技術に対する関心が高まっていた中のため、とても身になる貴重な経験をさせていただきました。
+          <img src="/syber.jpg" className="rounded-md" /></dd>
           </SlideAnimationRight>        
         </dl>
         {/* <span className="border-line"></span> */}

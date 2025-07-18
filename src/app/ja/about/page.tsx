@@ -31,9 +31,9 @@ export default function About() {
               </div>
             </FadeinAnimation>
         <FadeinAnimation>
-        <div className="mt-10 flex-col place-items-center">
+        <div className="mt-10 flex-col place-items-start">
             <h1 className="text-xl md:text-2xl mb-4 font-semibold">自己紹介</h1>
-            <p className="text-sm md:text-base">　本ポートフォリオをご覧いただきありがとうございます。{process.env.NEXT_PUBLIC_NAME}({process.env.NEXT_PUBLIC_NAME_KANA})と申します。名古屋大学 情報学部コンピュータ科学科 知能システム学専攻所属の3年生です。専攻先では、エレキギターやその音を加工するエフェクターといったものの出力する音声を扱う、音声信号処理という分野に興味を持っています。</p>
+            <p className="text-sm md:text-base">　本ポートフォリオをご覧いただきありがとうございます。{process.env.NEXT_PUBLIC_NAME}({process.env.NEXT_PUBLIC_NAME_KANA})と申します。名古屋大学 情報学部コンピュータ科学科 知能システム学専攻 戸田研究室所属の4年生です。専攻先では、エレキギターやその音を加工するエフェクターといったものの出力する音声を扱う、音声信号処理という分野に興味を持っています。</p>
             <p className="text-sm md:text-base">　名古屋大学のアプリ開発団体jackに所属しており、主に自分があったらいいなと思ったアプリをゆっくりと作っています。また、アプリケーションを作成する傍らで、音楽活動にも携わっています。</p>
             <p className="text-sm md:text-base">　ぜひ、Workページから作成したアプリや音楽をご覧いただけると幸いです。</p>
         </div>

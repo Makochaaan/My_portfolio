@@ -14,7 +14,7 @@ const WorkTab: React.FC<Page> = ({route, image, title, year, target = 0}) => {
             <div className="rounded-lg border-2 border-indigo-600 my-2">
                 <NextLink href={route} target="_blank">
                     <div className="relative group">
-                        <img src={image} className={"rounded-md"} />
+                        <img src={image} className="rounded-md border-2 border-indigo-600 w-full h-64 object-cover" />
                         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div className="flex items-center absolute bottom-0 right-0 bg-indigo-500/70 text-white flex-col px-16 py-2 rounded-tl-lg">
                                 <p>{title}</p>

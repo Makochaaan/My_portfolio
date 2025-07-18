@@ -182,7 +182,7 @@ const Timeline = () => {
         <SlideAnimationRight Threshold={0.5}>
           <dt>2024/08</dt>
           <dd><h1 className="my-2 font-bold text-xl">株式会社レコセレ インターンに参加</h1>
-          シンガポール研修の最中に出会った株式会社レコセレ様にスカウトいただき、インターン生として勤務しています。TransformerベースのAIを用いた音声合成モデルの構築に取り組んでいます。</dd>
+          シンガポール研修の最中に出会った株式会社レコセレ様にスカウトいただき、インターン生として2025年2月まで勤務していました。TransformerベースのAIを用いた音声合成モデルの構築に取り組みました。</dd>
           </SlideAnimationRight>        
         </dl>
         <span className="border-line"></span>
@@ -194,7 +194,29 @@ const Timeline = () => {
           <dd><h1 className="my-2 font-bold text-xl">JPHACKS 2024に参加</h1>
           日本最大の学生ハッカソンであるJPHACKSに出場しました。そこで、jackに所属するサークルメンバと3人で、「駅くぐる」というアプリを開発しました。メンバーの間で出た、駅の改札の中と外にトイレやコンビニといったどんな設備があるかを可視化したいというアイデアを形にしました。
           賞は惜しくも取れませんでしたが、普段研鑽している技術でここまで形にすることができ、とても楽しくいい経験になりました。
-          <img src="/ekikuguru.png" className="rounded-md" /></dd>
+          <WorkTab route="./work/Ekikuguru" image="/ekikuguru.png" title="駅くぐる" year="2024/10" target="0"/></dd>
+          </SlideAnimationRight>        
+        </dl>
+        <span className="border-line"></span>
+      </li>
+      {/* <li>
+        <dl>
+        <SlideAnimationRight Threshold={0.5}>
+          <dt>2024/11</dt>
+          <dd><h1 className="my-2 font-bold text-xl">Syber Agent様主催のインターンイベントに参加</h1>
+          Cyber Agent様が主催する、インフラ技術を体験するインターンイベントに参加しました。大学での実験でインフラ構築を体験したことから、とてもインフラ技術に対する関心が高まっていた中のため、とても身になる貴重な経験をさせていただきました。
+          <img src="/syber.jpg" className="rounded-md" /></dd>
+          </SlideAnimationRight>        
+        </dl>
+        <span className="border-line"></span>
+      </li> */}
+      <li>
+        <dl>
+        <SlideAnimationRight Threshold={0.5}>
+          <dt>2025/02</dt>
+          <dd><h1 className="my-2 font-bold text-xl">セキュリティマネジメント資格を取得</h1>
+          情報セキュリティに関する資格である、セキュリティマネジメント試験に合格しました。情報セキュリティの基礎知識を身につけることができ、今後の学びに活かせると感じています。
+          <img src="/SG.png" className="rounded-md" /></dd>
           </SlideAnimationRight>        
         </dl>
         <span className="border-line"></span>
@@ -202,10 +224,23 @@ const Timeline = () => {
       <li>
         <dl>
         <SlideAnimationRight Threshold={0.5}>
-          <dt>2024/11</dt>
-          <dd><h1 className="my-2 font-bold text-xl">Syber Agent様主催のインターンイベントに参加</h1>
-          Syber Agent様が主催する、インフラ技術を体験するインターンイベントに参加しました。大学での実験でインフラ構築を体験したことから、とてもインフラ技術に対する関心が高まっていた中のため、とても身になる貴重な経験をさせていただきました。
-          <img src="/syber.jpg" className="rounded-md" /></dd>
+          <dt>2025/03</dt>
+          <dd><h1 className="my-2 font-bold text-xl">株式会社PrAhaにてフルスタックエンジニアのインターンに参加</h1>
+          株式会社PrAha様にて、フルスタックエンジニアとしてのインターン業務を開始しました。Flutterを用いた、動画学習アプリの開発に携わっています。
+          Flutterの知識を深めていと考えていた中でのインターン参加となり、非常に充実した経験をさせていただいています。また、GraphQLを使ったAPIの設計・実装や
+          DDDの実務実践など、普段の学びでは得られない経験を積むことができています。</dd>
+          </SlideAnimationRight>        
+        </dl>
+        <span className="border-line"></span>
+      </li>
+      <li>
+        <dl>
+        <SlideAnimationRight Threshold={0.5}>
+          <dt>2025/04</dt>
+          <dd><h1 className="my-2 font-bold text-xl">名古屋大学 戸田研究室に配属</h1>
+          4年生となり、自分が強く希望していた戸田研究室に配属されました。戸田研究室における専攻分野は音声信号処理に関するもので、エレキギターの音声を扱うことに興味を持っています。
+          研究を通じて、音声信号処理の基礎から応用まで、そしてそれを解明するためのAIの構築などを幅広く学び、実践的なスキルを身につけていきたいと考えています。<br/>
+          戸田研究室リンク：<NextLink href="https://www.toda.is.i.nagoya-u.ac.jp/" target="_blank">https://www.toda.is.i.nagoya-u.ac.jp/</NextLink></dd>
           </SlideAnimationRight>        
         </dl>
         {/* <span className="border-line"></span> */}

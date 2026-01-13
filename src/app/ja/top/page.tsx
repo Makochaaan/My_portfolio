@@ -47,12 +47,12 @@ export default function Top() {
                         <h1 className="mb-10 font-bold text-3xl text-center">作品</h1>
                         <div className="grid text-center lg:mb-10 lg:w-full lg:max-w-5xl lg:grid-cols-2 lg:text-left lg:gap-10">
                             <div className="relative group">
-                                <a href="./work/Yorimichizu" rel="noopener noreferrer">
-                                    <img src="/yorimichizu.png" className="rounded-md border-2 border-indigo-600 w-full h-64 object-cover" />
+                                <a href="./work/SUDO" rel="noopener noreferrer">
+                                    <img src="/Sudo.png" className="rounded-md border-2 border-indigo-600 w-full h-64 object-cover" />
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <div className="flex items-center absolute bottom-0 right-0 bg-indigo-500/70 flex-col px-16 py-2 rounded-tl-lg rounded-br-lg text-white">
-                                            <p>よりみちず</p>
-                                            <p>2023/10</p>
+                                            <p>SUDO</p>
+                                            <p>2024/11</p>
                                         </div>
                                     </div>
                                 </a>
@@ -63,7 +63,7 @@ export default function Top() {
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <div className="flex items-center absolute bottom-0 right-0 bg-indigo-500/70 flex-col px-16 py-2 rounded-tl-lg rounded-br-lg text-white">
                                             <p>ノイキャン聖徳太子</p>
-                                            <p>2025/04</p>
+                                            <p>2024/04</p>
                                         </div>
                                     </div>
                                 </a>

@@ -224,11 +224,11 @@ const Timeline = () => {
       <li>
         <dl>
         <SlideAnimationRight Threshold={0.5}>
-          <dt>2025/03</dt>
+          <dt>2025/03~2025/09</dt>
           <dd><h1 className="my-2 font-bold text-xl">株式会社PrAhaにてフルスタックエンジニアのインターンに参加</h1>
           株式会社PrAha様にて、フルスタックエンジニアとしてのインターン業務を開始しました。Flutterを用いた、動画学習アプリの開発に携わっています。
           Flutterの知識を深めていと考えていた中でのインターン参加となり、非常に充実した経験をさせていただいています。また、GraphQLを使ったAPIの設計・実装や
-          DDDの実務実践など、普段の学びでは得られない経験を積むことができています。</dd>
+          DDDの実務実践など、普段の学びでは得られない経験を積みました。</dd>
           </SlideAnimationRight>        
         </dl>
         <span className="border-line"></span>
@@ -243,7 +243,30 @@ const Timeline = () => {
           戸田研究室リンク：<NextLink href="https://www.toda.is.i.nagoya-u.ac.jp/" target="_blank">https://www.toda.is.i.nagoya-u.ac.jp/</NextLink></dd>
           </SlideAnimationRight>        
         </dl>
-        {/* <span className="border-line"></span> */}
+        <span className="border-line"></span>
+      </li>
+      <li>
+        <dl>
+        <SlideAnimationRight Threshold={0.5}>
+          <dt>2025/09</dt>
+          <dd><h1 className="my-2 font-bold text-xl">東京都オープンデータハッカソン2025に参加</h1>
+          東京都が主催するオープンデータハッカソンに参加し、「チャリNavi」というアプリを開発しました。東京都の公開するオープンデータを活用しながら行政課題を解決するもので、
+          私は「自転車の自発的な車道走行を促すアプリ」というテーマで参加しました。アプリ開発経験だけでなく、AI研究で培ったデータ分析技術も活かすことができ、とても有意義な経験となりました。
+          <WorkTab route="./work/Chari-navi" image="/chari-navi.png" title="チャリNavi" year="2025/09" target="0"/></dd>
+          </SlideAnimationRight>        
+        </dl>
+        <span className="border-line"></span>
+      </li>
+      <li>
+        <dl>
+        <SlideAnimationRight Threshold={0.5}>
+          <dt>2025/10~2026/11</dt>
+          <dd><h1 className="my-2 font-bold text-xl">JPHACKS2025に参加</h1>
+          前年のリベンジとして、JPHACKS2025に参加しました。自身の塾講師としての経験を踏まえ、教師の説明の補助となる数学動画生成ツールである「SUDO」を作成し、たくさんの賞をいただくことができました。
+          <WorkTab route="./work/SUDO" image="/sudo.png" title="SUDO" year="2025/11" target="0"/></dd>
+          </SlideAnimationRight>        
+        </dl>
+        <span className="border-line"></span>
       </li>
     </ul>
   );

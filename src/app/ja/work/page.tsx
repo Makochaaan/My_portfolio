@@ -16,7 +16,8 @@ return (
                 ></div>
                 <h2 className="mt-2 mb-10 font-bold flex justify-center text-center text-blue-700">作ってきた開発作品たちです。クリックで詳細ページに飛べます。</h2>
                 <div className="grid text-center lg:mb-10 lg:w-full lg:max-w-5xl lg:grid-cols-2 lg:text-left lg:gap-10">
-                    
+                    <WorkTab route="./work/SUDO" image="/Sudo.png" title="数学動画ジェネレーター SUDO" year="2025/11" target="0"/>
+                    <WorkTab route="./work/Chari-navi" image="/chari-navi.png" title="チャリNavi" year="2025/09" target="0"/>
                     <WorkTab route="./work/NexTrain" image="/nexTrain.png" title="NexTrain" year="2025/05" target="0"/>
                     <WorkTab route="./work/NoiseTaishi" image="/noiseTaishi.png" title="ノイキャン聖徳太子" year="2025/04" target="0"/>
                     <WorkTab route="./work/Ekikuguru" image="/ekikuguru.png" title="駅くぐる" year="2024/10" target="0"/>

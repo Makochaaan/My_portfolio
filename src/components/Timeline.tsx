@@ -25,6 +25,12 @@ const HISTORY: HistoryItem[] = [
     image: "/2026APSIPA.jpg",
   },
   {
+    date: "2026/10~2026/11",
+    category: "career",
+    title: "リクルート株式会社 データサイエンスインターン",
+    body: "データサイエンスのインターンに参加し、実務データを使った課題発見とモデル改善を行いました。",
+  },
+  {
     date: "2026/09",
     category: "research",
     title: "音響学会 2026年秋季大会（金沢）で発表",

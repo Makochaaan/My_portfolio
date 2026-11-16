@@ -87,11 +87,14 @@ const SECTIONS: Section[] = [
         ],
       },
       {
-        name: "データ分析",
+        name: "データサイエンス・機械学習",
         icon: "/python.png",
         tools: ["Python"],
-        body: "オープンデータを分析し、行政課題の解決につなげるアプリを開発しました。",
-        proofs: [{ label: "チャリNavi（東京都OD Hackathon 学生賞）", href: "./work/Chari-navi" }],
+        body: "データサイエンスのインターンで、機械学習の研鑽を積みました。また、オープンデータを分析して行政課題の解決につなげるアプリも開発しました。",
+        proofs: [
+          { label: "リクルート株式会社 データサイエンスインターン" },
+          { label: "チャリNavi（東京都OD Hackathon 学生賞）", href: "./work/Chari-navi" },
+        ],
       },
     ],
   },

@@ -93,10 +93,6 @@ export default function About() {
                         <img className="fill-current w-6 h-6 mr-2" src="/Instagram_mark.svg" alt="Instagram Logo" />
                             <span>Instagram</span>
                         </a><br></br>
-                        <a href={process.env.NEXT_PUBLIC_JACK|| '#'} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-20 md:px-40 w-full rounded-full inline-flex items-center">
-                        <img className="fill-current w-6 h-6 mr-2 rounded-md" src="/jack_mark.png" alt="jack Logo" />
-                            <span>jack</span>
-                        </a><br></br>
                     </div>
           </div>
       </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "../../../components/header";
 import Footer from "../../../components/footer";
+import News from "../../../components/News";
 import { SlideAnimationLeft, SlideAnimationRight } from "../../../animation/slideAnimation";
 import NextLink from 'next/link'
 
@@ -42,6 +43,9 @@ export default function Top() {
                         </div>
                         </SlideAnimationRight>
                     </div>
+
+                    <News lang="ja" />
+
 
                     <div className="pt-20 mb-20 flex-col">
                         <h1 className="mb-10 font-bold text-3xl text-center">作品</h1>
@@ -87,10 +91,6 @@ export default function Top() {
                             <a href={process.env.NEXT_PUBLIC_INSTAGRAM} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-20 md:px-40 w-full rounded-full inline-flex items-center">
                             <img className="fill-current w-6 h-6 mr-2" src="/Instagram_mark.svg" alt="Instagram Logo" />
                                 <span>Instagram</span>
-                            </a><br></br>
-                            <a href={process.env.NEXT_PUBLIC_JACK} target="_blank" className="mt-2 bg-gray-300 hover:bg-gray-400 hover:duration-500 text-gray-800 font-bold py-5 px-20 md:px-40 w-full rounded-full inline-flex items-center">
-                            <img className="fill-current w-6 h-6 mr-2 rounded-md" src="/jack_mark.png" alt="jack Logo" />
-                                <span>アプリ開発団体jack</span>
                             </a><br></br>
                         </div>
                     </div>

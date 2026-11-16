@@ -3,6 +3,7 @@
 import NextLink from 'next/link'
 import { NextRequest } from 'next/server';
 import { useState } from 'react';
+import SoundToggle from './SoundToggle';
 
 type Page = {
     page: string,
@@ -83,15 +84,21 @@ const Header: React.FC<Page> = (props) => {
         <header className="w-full flex flex-col md:flex-row items-center justify-between p-4 text-blue-800">
             <div className="flex justify-between w-full md:w-auto">
                 <h1 className="text-2xl font-bold mb-4 md:mb-0">DEPONTES&#39; PORTFOLIO</h1>
-                <button className="md:hidden" onClick={toggleMenu}>
+                <div className="flex items-center gap-4 md:hidden">
+                    <SoundToggle lang={lang} />
+                    <button onClick={toggleMenu}>
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
-                </button>
+                    </button>
+                </div>
             </div>
-            <nav className={`${isOpen ? 'block' : 'hidden'} md:block`}>
-                {list_component}
-            </nav>
+            <div className="flex items-center gap-6">
+                <nav className={`${isOpen ? 'block' : 'hidden'} md:block`}>
+                    {list_component}
+                </nav>
+                <SoundToggle lang={lang} className="hidden md:inline-flex" />
+            </div>
         </header>
     )
 }

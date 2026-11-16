@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "../../../components/header";
 import Footer from "../../../components/footer";
 import News from "../../../components/News";
+import SoundWave from "../../../components/SoundWave";
 import { SlideAnimationLeft, SlideAnimationRight } from "../../../animation/slideAnimation";
 import NextLink from 'next/link'
 
@@ -9,13 +10,15 @@ import NextLink from 'next/link'
 export default function Top() { 
 
     return (
-            <main className="flex flex-col items-center px-4 md:px-60">
+            <main className="flex flex-col items-center px-4 md:px-60 overflow-x-clip">
                 <Header page="top"/>
-                <div className="mt-20 md:mt-60 z-10 max-w-5xl items-center font-mono text-sm text-center md:text-left">
-                    <h1 className="text-4xl md:text-8xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 inline-block text-transparent bg-clip-text">DEPONTES</h1><br></br>
-                    <h1 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 inline-block text-transparent bg-clip-text">MAKOTO</h1>
-                </div>
-                <div className="relative mt-20 md:mt-40 z-10 flex place-items-center before:absolute before:h-[150px] md:before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[90px] md:after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[240px] md:before:w-[480px] sm:after:w-[120px] md:after:w-[240px] before:lg:h-[360px]">
+                <SoundWave>
+                    <div className="relative mt-16 md:mt-[calc(16vh+2.5rem)] z-10 max-w-5xl items-center font-mono text-sm text-center md:text-left rounded-2xl bg-white/5 px-6 py-4 md:px-12 md:py-8">
+                        <h1 className="text-4xl md:text-8xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 inline-block text-transparent bg-clip-text">DEPONTES</h1><br></br>
+                        <h1 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 inline-block text-transparent bg-clip-text">MAKOTO</h1>
+                    </div>
+                </SoundWave>
+                <div className="relative mt-24 md:mt-[18vh] z-10 flex place-items-center before:absolute before:h-[150px] md:before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[90px] md:after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[240px] md:before:w-[480px] sm:after:w-[120px] md:after:w-[240px] before:lg:h-[360px]">
                     {/* <p>↓</p> */}
                     <div className="absolute left-1/2 bottom-1
                     after:absolute after:top-0 after:width-[3px] after:height-[60px] bg-blue-400 animate-line-flow opacity-0"></div>

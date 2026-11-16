@@ -38,7 +38,7 @@ export default function Top() {
                             <h1 className="font-extrabold mb-8 text-3xl md:text-5xl text-blue-800">{process.env.NEXT_PUBLIC_NAME}</h1>
                             {/* <p className="text-16 mb-8">{process.env.NEXT_PUBLIC_NAME}</p> */}
                             <p className="mb-8">{process.env.NEXT_PUBLIC_BELONG_EN}</p>
-                            <p className="mb-16"></p>
+                            <p className="mb-16">An audio and music researcher who loves music, travel, food, and app development.</p>
                             <NextLink href="../about" className="bg-gray-300 hover:bg-gray-200 rounded-xl p-5 text-blue-800 font-bold hover:text-blue-400 hover:duration-500 border border-blue-800 hover:border-blue-400">ABOUT ME →</NextLink>
                         </div>
                         </SlideAnimationRight>

@@ -38,7 +38,7 @@ export default function Top() {
                             <h1 className="font-extrabold mb-8 text-3xl md:text-5xl text-blue-800">{process.env.NEXT_PUBLIC_NAME}</h1>
                             {/* <p className="text-16 mb-8">{process.env.NEXT_PUBLIC_NAME}</p> */}
                             <p className="mb-8">{process.env.NEXT_PUBLIC_BELONG}</p>
-                            <p className="mb-16">音楽と旅と食事を愛するアプリ開発者です。</p>
+                            <p className="mb-16">音楽と旅と食事とアプリ開発を愛する音声・音楽研究者です。</p>
                             <NextLink href="../about" className="bg-gray-300 hover:bg-gray-200 rounded-xl p-5 text-blue-800 font-bold hover:text-blue-400 hover:duration-500 border border-blue-800 hover:border-blue-400">もっと知る →</NextLink>
                         </div>
                         </SlideAnimationRight>
@@ -56,7 +56,7 @@ export default function Top() {
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <div className="flex items-center absolute bottom-0 right-0 bg-indigo-500/70 flex-col px-16 py-2 rounded-tl-lg rounded-br-lg text-white">
                                             <p>SUDO</p>
-                                            <p>2024/11</p>
+                                            <p>2025/11</p>
                                         </div>
                                     </div>
                                 </a>
@@ -67,7 +67,7 @@ export default function Top() {
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <div className="flex items-center absolute bottom-0 right-0 bg-indigo-500/70 flex-col px-16 py-2 rounded-tl-lg rounded-br-lg text-white">
                                             <p>ノイキャン聖徳太子</p>
-                                            <p>2024/04</p>
+                                            <p>2025/04</p>
                                         </div>
                                     </div>
                                 </a>

@@ -1,274 +1,270 @@
 "use client";
 
-import React, { useEffect } from 'react';
-import WorkTab from "../components/workTab";
-import { SlideAnimationRight } from '../animation/slideAnimation';
-import NextLink from 'next/link';
+import NextLink from "next/link";
+import { useInView } from "react-intersection-observer";
 
-const Timeline = () => {
-    useEffect(() => {
-      const handleScroll = () => {
-        document.querySelectorAll('.timeline li').forEach(item => {
-          const element = item as HTMLElement;
-          const elemPos = element.getBoundingClientRect().top + window.scrollY;
-          const scroll = window.scrollY;
-          const windowHeight = window.innerHeight;
-          const startPoint = windowHeight / 2; // 画面の高さの50%をトリガーポイントに設定
-  
-          if (scroll >= elemPos - windowHeight + startPoint) {
-            console.log("Condition met for", item);
-            const H = element.offsetHeight;
-            const percent = ((scroll + startPoint - elemPos-100) / (H / 2)) * 100;
-            const borderLine = element.querySelector('.border-line') as HTMLElement;
-            if (borderLine) {
-              borderLine.style.height = `${Math.min(percent, 100)}%`;
-            }
-          }
-        });
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-      handleScroll();
-  
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
+type Category = "education" | "research" | "dev" | "activity" | "career";
+
+type HistoryItem = {
+  date: string; // YYYY/MM or YYYY/MM~YYYY/MM
+  category: Category;
+  title: string;
+  body?: string;
+  image?: string;
+  work?: { route: string; image: string; title: string };
+  link?: { label: string; href: string };
+};
+
+// 新しい出来事は配列の先頭に追加してください（新しい順に表示されます）
+const HISTORY: HistoryItem[] = [
+  {
+    date: "2026/11",
+    category: "research",
+    title: "APSIPA ASC 2026（バンコク, タイ）で発表",
+    body: "「Audio Effect Setting Estimation with Module Separated Architecture」について、国際会議で発表しました。",
+    image: "/2026APSIPA.jpg",
+  },
+  {
+    date: "2026/09",
+    category: "research",
+    title: "音響学会 2026年秋季大会（金沢）で発表",
+    body: "「オーディオエフェクト設定逆推定における学習戦略」について発表しました。",
+    image: "/2026ASJ.jpg",
+  },
+  {
+    date: "2026/06",
+    category: "research",
+    title: "音学シンポジウム 2026で学生優秀発表賞を受賞",
+    body: "「モジュール分離型アーキテクチャによるオーディオエフェクト設定逆推定」について発表し、学生優秀発表賞をいただきました。",
+    image: "/symposyum.jpg",
+  },
+  {
+    date: "2026/05~",
+    category: "career",
+    title: "株式会社Acompanyにてフルスタックエンジニアインターンを開始",
+    body: "セキュリティ技術の一つであるConfidential Computingを扱った製品開発を行います。",
+  },
+  {
+    date: "2026/04",
+    category: "education",
+    title: "名古屋大学 情報学研究科 知能システム学専攻 修士課程 入学",
+    body: "引き続き戸田研究室で、オーディオエフェクトを対象とした音声信号処理の研究を続けています。",
+  },
+  {
+    date: "2026/03",
+    category: "education",
+    title: "名古屋大学 情報学部 コンピュータ科学科 卒業",
+  },
+  {
+    date: "2026/02",
+    category: "activity",
+    title: "Google AI学生アンバサダー キャンパスMVPを受賞",
+    body: "半年間リーダーとして携わったアンバサダー活動が、全国で最も成果を出したことで表彰されました。",
+    image: "/ambasador.jpg",
+  },
+  {
+    date: "2025/11",
+    category: "education",
+    title: "応用情報技術者試験に合格",
+  },
+  {
+    date: "2025/10~2025/11",
+    category: "dev",
+    title: "JPHACKS 2025で審査員特別賞・イノベーター認定を受賞",
+    body: "前年のリベンジとしてJPHACKS 2025に参加しました。塾講師としての経験を踏まえ、教師の説明を補助する数学動画生成ツール「SUDO」を開発し、審査員特別賞とイノベーター認定をいただきました。",
+    work: { route: "./work/SUDO", image: "/Sudo.png", title: "SUDO" },
+  },
+  {
+    date: "2025/09~2025/10",
+    category: "dev",
+    title: "東京都オープンデータハッカソン 2025で学生賞を受賞",
+    body: "東京都の公開するオープンデータを活用して行政課題を解決するハッカソンに、「自転車の自発的な車道走行を促すアプリ」というテーマで参加し、「チャリNavi」を開発しました。アプリ開発だけでなく、研究で培ったデータ分析技術も活かすことができました。",
+    work: { route: "./work/Chari-navi", image: "/chari-navi.png", title: "チャリNavi" },
+  },
+  {
+    date: "2025/07",
+    category: "activity",
+    title: "Google AI学生アンバサダーに就任",
+    body: "Googleの主催する、AI活用を学生に推進するアンバサダー活動を開始しました。名古屋大学のリーダーを務めます。",
+  },
+  {
+    date: "2025/04",
+    category: "research",
+    title: "名古屋大学 戸田研究室に配属",
+    body: "強く希望していた戸田研究室に配属されました。音声信号処理を専門とする研究室で、エレキギターの音やエフェクターを扱う研究に取り組んでいます。",
+    link: { label: "戸田研究室", href: "https://www.toda.is.i.nagoya-u.ac.jp/" },
+  },
+  {
+    date: "2025/03~2025/09",
+    category: "career",
+    title: "株式会社PrAha フルスタックエンジニアインターン",
+    body: "Flutterを用いた動画学習アプリの開発に携わりました。GraphQLを使ったAPIの設計・実装やDDDの実務実践など、普段の学びでは得られない経験を積みました。",
+  },
+  {
+    date: "2025/02",
+    category: "education",
+    title: "情報セキュリティマネジメント試験に合格",
+    body: "情報セキュリティの基礎知識を体系的に身につけました。",
+  },
+  {
+    date: "2024/10",
+    category: "dev",
+    title: "JPHACKS 2024に参加",
+    body: "日本最大の学生ハッカソンに、jackのメンバー3人で出場しました。駅の改札の内外にどんな設備があるかを可視化するアプリ「駅くぐる」を開発しました。",
+    work: { route: "./work/Ekikuguru", image: "/ekikuguru.png", title: "駅くぐる" },
+  },
+  {
+    date: "2024/08~2025/02",
+    category: "career",
+    title: "株式会社レコセレ インターン",
+    body: "シンガポール研修中に出会った株式会社レコセレ様にスカウトいただき、Transformerベースの音声合成モデルの構築に取り組みました。",
+  },
+  {
+    date: "2024/07",
+    category: "activity",
+    title: "シンガポール国立大学での研修に参加",
+    body: "情報学部の2週間のシンガポール研修プランに参加し、シンガポール国立大学での研修のほか、Google・Microsoft・AWSのシンガポールオフィスを見学しました。",
+    image: "/singapore_sensored.jpg",
+    link: { label: "名古屋大学公式サイトの記事（英語）", href: "https://en.nagoya-u.ac.jp/voice/nus_entrepreneurship.html" },
+  },
+  {
+    date: "2024/04",
+    category: "dev",
+    title: "「名古屋大学しんかんWeb2024」を受託開発",
+    body: "前年に続き名古屋大学生協学生委員会様からお声かけいただき、制作の総監督として土台の整備、デザインの決定、マイルストーンの設定などを担いました。",
+    work: { route: "./work/Shinkan-web-2024", image: "/shinkanweb2024.png", title: "名古屋大学しんかんWeb2024" },
+  },
+  {
+    date: "2023/12",
+    category: "activity",
+    title: "アプリ開発団体jack 副代表に就任",
+    body: "代表の任期満了後、副代表としてサークル運営を支えました。",
+  },
+  {
+    date: "2023/10",
+    category: "activity",
+    title: "学生エンジニア交流会「Matsuriba」を立ち上げ",
+    body: "HAL名古屋の学生を中心に、名工大・愛工大・名城大など名古屋周辺の学生エンジニアが交流する場を立ち上げました。",
+    image: "/matsuriba.jpg",
+  },
+  {
+    date: "2023/07",
+    category: "dev",
+    title: "「よりみちず ver.2」を開発・リリース",
+    body: "ハッカソンで作った ver.1 を自分の環境で作り直し、UIの刷新と機能追加を行ってリリースしました。",
+    work: { route: "./work/Yorimichizu", image: "/yorimichizu.png", title: "よりみちず" },
+  },
+  {
+    date: "2023/04",
+    category: "dev",
+    title: "「名古屋大学しんかんWeb2023」を開発",
+    body: "名古屋大学生協学生委員会様からお声かけいただき、新入生向けの情報サイトの制作に携わりました。",
+  },
+  {
+    date: "2023/02",
+    category: "dev",
+    title: "「My New Gear」を開発・リリース",
+    body: "サークルの先輩の企画に参加し、6人で3Dシューティングゲームを制作しました。Unityのオブジェクト操作、エフェクト、モデリングの基礎を学びました。",
+    work: { route: "./work/My-new-gear", image: "/mynewgear.png", title: "My New Gear" },
+  },
+  {
+    date: "2022/12",
+    category: "activity",
+    title: "アプリ開発団体jack 代表に就任",
+    body: "交流機会を増やしたり外部団体と交渉したりして、メンバーの利益が最大化できるよう取り組みました。",
+  },
+  {
+    date: "2022/05",
+    category: "dev",
+    title: "「よりみちず ver.1」を開発",
+    body: "サークル加入後最初のハッカソンで、メンバー4人で開発しました。出発地と目的地を入れると寄り道先を提案する、シンプルなアプリでした。",
+    image: "/yorimichizu1.png",
+  },
+  {
+    date: "2022/04",
+    category: "education",
+    title: "名古屋大学 情報学部 コンピュータ科学科 入学",
+    body: "AI・プログラミングに興味を持ち、独立した情報学部を持つ名古屋大学に入学しました。同時にアプリ開発団体jackに加入し、アプリ開発を始めました。",
+  },
+  {
+    date: "2020/09",
+    category: "activity",
+    title: "岡崎北高校 生徒会長に就任",
+    body: "コロナ禍で開催が危ぶまれた学校祭を実現し、女子生徒のスラックス着用許可や一部頭髪規定の撤廃なども実現しました。",
+  },
+  {
+    date: "2020/02",
+    category: "activity",
+    title: "岡崎北高校 音楽部 部長に就任",
+    body: "就任直後にコロナ禍となり、イベントや全国大会の中止を経験しました。限られた環境でどうするかを考えた経験は、今も活きています。",
+  },
+  {
+    date: "2019/04",
+    category: "education",
+    title: "愛知県立 岡崎北高校 入学",
+    body: "音楽部（合唱・軽音楽）に所属し、テノールパートとベースボーカルを担当しました。",
+  },
+];
+
+const CATEGORY: Record<Category, { label: string; color: string }> = {
+  education: { label: "学歴", color: "bg-slate-600" },
+  research: { label: "研究", color: "bg-blue-600" },
+  dev: { label: "開発", color: "bg-indigo-500" },
+  activity: { label: "活動", color: "bg-emerald-600" },
+  career: { label: "職歴", color: "bg-amber-500" },
+};
+
+const TimelineItem = ({ item }: { item: HistoryItem }) => {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15 });
+  const cat = CATEGORY[item.category];
 
   return (
-    <ul className="timeline">
-      <li>
-        <dl>
-          <SlideAnimationRight Threshold={0.5}>
-          <dt>2019/04</dt>
-          <dd><h1 className="my-2 font-bold text-xl">愛知県立 岡崎北高校入学</h1>
-              愛知県岡崎市にある岡崎北高校に入学しました。高校入学後は、音楽部(合唱と軽音楽を行う部活)に所属し、テノールパート及びベースボーカルを担当しました。体育と美術のみ苦手でした。</dd>
-          </SlideAnimationRight>
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-          <SlideAnimationRight Threshold={0.5}>
-          <dt>2020/02</dt>
-          <dd><h1 className="my-2 font-bold text-xl">岡崎北高校 音楽部 部長になる</h1>
-              音楽部の部長になりました。しかし、就任直後にコロナ禍に見舞われてしまい、部内イベントの中止、当年の全国大会への出場の中止を余儀なくされ、思うよう物事を進めることが出来ませんでした。ただその時の、限られた環境でどうするかを考える経験は今でも自分の中に活きていると感じています。</dd>
-          </SlideAnimationRight>
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-          <SlideAnimationRight Threshold={0.5}>
-          <dt>2020/09</dt>
-          <dd><h1 className="my-2 font-bold text-xl">岡崎北高校 生徒会長になる</h1>
-              2学期となり、コロナとどう向き合っていくかで学校が不安に包まれている中、その不安定さをどうにかするためにどうすることができるのか。その答えとして、生徒会長に立候補して当選しました。コロナ禍で開催が危ぶまれた11月の学校祭を開催にこぎつけたり、女子生徒のスラックス着用許可、ツーブロックなど一部頭髪制限の撤廃などを実現したりしました。そこで経験した、人と議論をするといった経験は特に、今の考えを伝えられるという自分の能力にも生きていると感じています。</dd>
-          </SlideAnimationRight>
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-          <SlideAnimationRight Threshold={0.5}>
-          <dt>2022/04</dt>
-          <dd><h1 className="my-2 font-bold text-xl">名古屋大学 情報学部 コンピュータ科学科入学</h1>
-              AI・プログラミングについて興味があり、当時珍しく「工学部」としてではなく、「情報学部」として独立した学部を持っていた名古屋大学へ入学しました。そして入学する際に、アプリ開発団体jackの存在を知り加入しました。それがアプリ開発者としての始まりです。
-              <image href=""></image></dd>
-          </SlideAnimationRight>
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-          <SlideAnimationRight Threshold={0.5}>
-          <dt>2022/05</dt>
-          <dd><h1 className="my-2 font-bold text-xl">サークルメンバー4人で「よりみちず ver.1」を開発</h1>
-          サークル加入後最初のハッカソンで作ったものこそが「よりみちず」の始まりでした。当時は白背景に出発地と目的地を入れたら寄り道が適当に出てくるだけでした。</dd>
-          <img src='/yorimichizu1.png' className="rounded-md" />
-          </SlideAnimationRight>
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2022/12</dt>
-          <dd><h1 className="my-2 font-bold text-xl">アプリ開発団体jack代表に就任</h1>
-          僭越ながら代表となりました。幼少期から組織マネジメントは得意だったので、その力を活かしてサークルの交流機会を増やしたり、外部団体様と交渉したりして、メンバーの利益が最大化できるように精一杯取り組みました。</dd>
-          </SlideAnimationRight>
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2023/02</dt>
-          <dd><h1 className="my-2 font-bold text-xl">サークルメンバー6人で「My New Gear」を開発・リリース</h1>
-          サークルの先輩から、Unity開発のチュートリアルを兼ねて開発する企画に誘ってもらい参加しました。3Dシューティングゲームの作成を通じて、基本的なUnityのオブジェクト操作やエフェクティング、モデリングのイロハを学びました。
-          <WorkTab route="./work/My-new-gear" image="/mynewgear.png" title="My New Gear" year="2023/04" target="0"/></dd>
-          </SlideAnimationRight>
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2023/04</dt>
-          <dd><h1 className="my-2 font-bold text-xl">「名古屋大学しんかんWeb2023」を開発</h1>
-          名古屋大学生協学生委員会様からお声かけ頂き、新入生向けの情報サイトの作成に携わりました。</dd>
-        </SlideAnimationRight>
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-          <SlideAnimationRight Threshold={0.5}>
-          <dt>2023/07</dt>
-          <dd><h1 className="my-2 font-bold text-xl">「よりみちず ver.2」を開発・リリース</h1>
-          ハッカソンにて作成したままであった「よりみちず ver.1」を再度自分の環境に作成し、そこからUIや追加機能を実装してver.2としてリリースしました。
-          <WorkTab route="./work/Yorimichizu" image="/yorimichizu.png" title="よりみちず" year="2023/10" target="0"/></dd>
-          </SlideAnimationRight>
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2023/10</dt>
-          <dd><h1 className="my-2 font-bold text-xl">Matsuriba始動メンバーに</h1>
-          東海地方での学生エンジニア同士の交流をより活発にしたい、というHAL名古屋の学生を中心に、名工大、愛工大、名城大、トライデントコンピュータ専門学校などといった名古屋周辺の学生エンジニアが交流する場である「Matsuriba」を立ち上げました。
-          <img src='/matsuriba.jpg' className="rounded-md" />
-          </dd>
-          </SlideAnimationRight>
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>          
-          <dt>2023/12</dt>
-          <dd><h1 className="my-2 font-bold text-xl">アプリ開発団体jack代表任期満了、続いて副代表に就任</h1></dd>
-          </SlideAnimationRight>        
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2023/04</dt>
-          <dd><h1 className="my-2 font-bold text-xl">「名古屋大学しんかんWeb2024」を受託開発</h1>
-          再度、名古屋大学生協学生委員会様からお声かけ頂き、再び新入生向けの情報サイトの作成に携わりました。今回は制作の総監督を務め、土台の整備、大まかなデザインの決定、マイルストーンの設定、コードの微修正などを担いました。
-          <WorkTab route="./work/Shinkan-web-2024" image="/shinkanweb2024.png" title="名古屋大学しんかんWeb2024" year="2024/04" target="0"/></dd>
-          </SlideAnimationRight>        
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2024/07</dt>
-          <dd><h1 className="my-2 font-bold text-xl">シンガポールに留学</h1>
-          情報学部にて今年度から開始された2週間のシンガポール研修プランに参加しました。名古屋大学と提携を結び、深くつながっているシンガポール国立大学様にて10日間の研修を行い、Google・Microsoft・AWSのシンガポールオフィスに見学へも行きました。研修を通じて、異国文化を知る良い機会となりました。<br/>
-          以下のリンクに、シンガポール研修の記事(英語)を名古屋大学の公式サイトにて掲載しています。<br/>
-          リンク：<NextLink href="https://en.nagoya-u.ac.jp/voice/nus_entrepreneurship.html" target="_blank">https://en.nagoya-u.ac.jp/voice/nus_entrepreneurship.html</NextLink>
-          <img src="/singapore_sensored.jpg" className="rounded-md" />
-          </dd>
-          </SlideAnimationRight>        
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2024/08</dt>
-          <dd><h1 className="my-2 font-bold text-xl">株式会社レコセレ インターンに参加</h1>
-          シンガポール研修の最中に出会った株式会社レコセレ様にスカウトいただき、インターン生として2025年2月まで勤務していました。TransformerベースのAIを用いた音声合成モデルの構築に取り組みました。</dd>
-          </SlideAnimationRight>        
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2024/10</dt>
-          <dd><h1 className="my-2 font-bold text-xl">JPHACKS 2024に参加</h1>
-          日本最大の学生ハッカソンであるJPHACKSに出場しました。そこで、jackに所属するサークルメンバと3人で、「駅くぐる」というアプリを開発しました。メンバーの間で出た、駅の改札の中と外にトイレやコンビニといったどんな設備があるかを可視化したいというアイデアを形にしました。
-          賞は惜しくも取れませんでしたが、普段研鑽している技術でここまで形にすることができ、とても楽しくいい経験になりました。
-          <WorkTab route="./work/Ekikuguru" image="/ekikuguru.png" title="駅くぐる" year="2024/10" target="0"/></dd>
-          </SlideAnimationRight>        
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      {/* <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2024/11</dt>
-          <dd><h1 className="my-2 font-bold text-xl">Syber Agent様主催のインターンイベントに参加</h1>
-          Cyber Agent様が主催する、インフラ技術を体験するインターンイベントに参加しました。大学での実験でインフラ構築を体験したことから、とてもインフラ技術に対する関心が高まっていた中のため、とても身になる貴重な経験をさせていただきました。
-          <img src="/syber.jpg" className="rounded-md" /></dd>
-          </SlideAnimationRight>        
-        </dl>
-        <span className="border-line"></span>
-      </li> */}
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2025/02</dt>
-          <dd><h1 className="my-2 font-bold text-xl">セキュリティマネジメント資格を取得</h1>
-          情報セキュリティに関する資格である、セキュリティマネジメント試験に合格しました。情報セキュリティの基礎知識を身につけることができ、今後の学びに活かせると感じています。
-          <img src="/SG.png" className="rounded-md" /></dd>
-          </SlideAnimationRight>        
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2025/03~2025/09</dt>
-          <dd><h1 className="my-2 font-bold text-xl">株式会社PrAhaにてフルスタックエンジニアのインターンに参加</h1>
-          株式会社PrAha様にて、フルスタックエンジニアとしてのインターン業務を開始しました。Flutterを用いた、動画学習アプリの開発に携わっています。
-          Flutterの知識を深めていと考えていた中でのインターン参加となり、非常に充実した経験をさせていただいています。また、GraphQLを使ったAPIの設計・実装や
-          DDDの実務実践など、普段の学びでは得られない経験を積みました。</dd>
-          </SlideAnimationRight>        
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2025/04</dt>
-          <dd><h1 className="my-2 font-bold text-xl">名古屋大学 戸田研究室に配属</h1>
-          4年生となり、自分が強く希望していた戸田研究室に配属されました。戸田研究室における専攻分野は音声信号処理に関するもので、エレキギターの音声を扱うことに興味を持っています。
-          研究を通じて、音声信号処理の基礎から応用まで、そしてそれを解明するためのAIの構築などを幅広く学び、実践的なスキルを身につけていきたいと考えています。<br/>
-          戸田研究室リンク：<NextLink href="https://www.toda.is.i.nagoya-u.ac.jp/" target="_blank">https://www.toda.is.i.nagoya-u.ac.jp/</NextLink></dd>
-          </SlideAnimationRight>        
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2025/09</dt>
-          <dd><h1 className="my-2 font-bold text-xl">東京都オープンデータハッカソン2025に参加</h1>
-          東京都が主催するオープンデータハッカソンに参加し、「チャリNavi」というアプリを開発しました。東京都の公開するオープンデータを活用しながら行政課題を解決するもので、
-          私は「自転車の自発的な車道走行を促すアプリ」というテーマで参加しました。アプリ開発経験だけでなく、AI研究で培ったデータ分析技術も活かすことができ、とても有意義な経験となりました。
-          <WorkTab route="./work/Chari-navi" image="/chari-navi.png" title="チャリNavi" year="2025/09" target="0"/></dd>
-          </SlideAnimationRight>        
-        </dl>
-        <span className="border-line"></span>
-      </li>
-      <li>
-        <dl>
-        <SlideAnimationRight Threshold={0.5}>
-          <dt>2025/10~2026/11</dt>
-          <dd><h1 className="my-2 font-bold text-xl">JPHACKS2025に参加</h1>
-          前年のリベンジとして、JPHACKS2025に参加しました。自身の塾講師としての経験を踏まえ、教師の説明の補助となる数学動画生成ツールである「SUDO」を作成し、たくさんの賞をいただくことができました。
-          <WorkTab route="./work/SUDO" image="/sudo.png" title="SUDO" year="2025/11" target="0"/></dd>
-          </SlideAnimationRight>        
-        </dl>
-        <span className="border-line"></span>
-      </li>
-    </ul>
+    <li
+      ref={ref}
+      className={`relative pl-8 pb-8 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+    >
+      <span className={`absolute left-0 top-1.5 h-3 w-3 -translate-x-[5px] rounded-full ring-4 ring-white ${cat.color}`} />
+      <div className="flex flex-wrap items-center gap-2 mb-1">
+        <time className="font-mono text-sm text-gray-500">{item.date}</time>
+        <span className={`${cat.color} text-white text-xs font-bold rounded-full px-2.5 py-0.5`}>{cat.label}</span>
+      </div>
+      <h3 className="font-bold text-base md:text-lg leading-snug">{item.title}</h3>
+      {item.body && <p className="mt-1 text-sm md:text-base text-gray-700 leading-relaxed">{item.body}</p>}
+      {item.link && (
+        <NextLink href={item.link.href} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-sm text-blue-700 hover:underline">
+          {item.link.label} ↗
+        </NextLink>
+      )}
+      {item.image && <img src={item.image} alt="" className="mt-3 h-auto w-auto max-w-full sm:max-w-sm max-h-72 rounded-md" />}
+      {item.work && (
+        <NextLink
+          href={item.work.route}
+          className="mt-3 flex w-full max-w-sm items-center gap-3 rounded-md border border-indigo-300 p-2 hover:bg-indigo-50 transition-colors"
+        >
+          <img src={item.work.image} alt="" className="h-14 w-24 shrink-0 rounded object-cover" />
+          <span className="text-sm font-semibold text-indigo-700">{item.work.title} を見る →</span>
+        </NextLink>
+      )}
+    </li>
+  );
+};
+
+const Timeline = () => {
+  const years = Array.from(new Set(HISTORY.map((h) => h.date.slice(0, 4))));
+
+  return (
+    <div className="my-8 w-full">
+      {years.map((year) => (
+        <section key={year} className="mb-2">
+          <h3 className="mb-4 text-2xl font-extrabold text-blue-800">{year}</h3>
+          <ul className="ml-2 border-l-2 border-gray-300">
+            {HISTORY.filter((h) => h.date.startsWith(year)).map((item) => (
+              <TimelineItem key={item.date + item.title} item={item} />
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
   );
 };
 

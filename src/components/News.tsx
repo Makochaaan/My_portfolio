@@ -28,8 +28,8 @@ const NEWS: NewsItem[] = [
     tag: "research",
     title: {
       ja: "音響学会 2026年秋季大会（金沢, 石川県）にて「オーディオエフェクト設定逆推定における学習戦略」の発表を行いました",
-      en: "Presented 'Learning Strategies for Audio Effect Setting Estimation' at the Audio Engineering Society 2026 Fall Conference (Kanazawa, Ishikawa)",
-      "pt-BR": "Apresentei 'Estratégias de Aprendizado para Estimativa de Configurações de Efeitos de Áudio' na Conferência de Outono da Sociedade de Engenharia de Áudio 2026 (Kanazawa, Ishikawa)",
+      en: "Presented 'Learning Strategies for Audio Effect Setting Estimation' at the Acoustical Society of Japan (ASJ) 2026 Autumn Meeting (Kanazawa, Ishikawa)",
+      "pt-BR": "Apresentei 'Estratégias de Aprendizado para Estimativa de Configurações de Efeitos de Áudio' no Encontro de Outono 2026 da Sociedade Acústica do Japão (ASJ) (Kanazawa, Ishikawa)",
     },
     link: "",
   },
@@ -38,8 +38,8 @@ const NEWS: NewsItem[] = [
     tag: "award",
     title: {
       ja: "音学シンポジウム 2026にて「モジュール分離型アーキテクチャによるオーディオエフェクト設定逆推定」の発表を行い、学生優秀発表賞を受賞しました",
-      en: "Received the Student Outstanding Presentation Award at the Audio Engineering Symposium 2026",
-      "pt-BR": "Recebi o Prêmio de Apresentação Estudantil de Destaque no Simpósio de Engenharia de Áudio 2026",
+      en: "Presented 'Audio Effect Setting Estimation with a Module-Separated Architecture' and received the Student Excellent Presentation Award at Otogaku Symposium 2026",
+      "pt-BR": "Recebi o Prêmio de Apresentação Estudantil de Destaque no Otogaku Symposium 2026",
     },
     link: "",
   },

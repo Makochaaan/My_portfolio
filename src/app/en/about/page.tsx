@@ -3,7 +3,6 @@ import Header from "../../../components/header";
 import Footer from "../../../components/footer";
 import Timeline from "../../../components/Timeline";
 import { FadeinAnimation } from "../../../animation/fadeAnimation";
-import React, { useEffect } from 'react';
 
 export default function About() {
   return (
@@ -33,49 +32,19 @@ export default function About() {
         <FadeinAnimation>
         <div className="mt-10 flex-col place-items-center ">
             <h1 className="text-xl md:text-2xl mb-4 font-semibold">INTRODUCE</h1>
-            <p className="text-sm md:text-base">　Thank you for watching this page. My name is {process.env.NEXT_PUBLIC_NAME}. I&#39;m Brazilian-Japanese. I&#39;m a 3rd year student of Nagoya University, faculty of Informatics. I&#39;ve been specializing at signal analysis, especially as for electric insturments, and effectors.</p>
-            <p className="text-sm md:text-base">　I&#39;m a member of application development circle &#34;jack&#34; and make some application. Also, I play bass and sing at a band circle.</p>
-            <p className="text-sm md:text-base">　I&#39;m glad you to watch my masterpieces from &#34;WORK&#34; page. If you want to contact me, please send messages to accounts below.</p>
+            <p className="text-sm md:text-base">　Thank you for visiting my portfolio. My name is {process.env.NEXT_PUBLIC_NAME}, and I&#39;m Brazilian-Japanese. I&#39;m a first-year master&#39;s student at Toda Lab, Department of Intelligent Systems, Graduate School of Informatics, Nagoya University. My research focuses on audio signal processing, especially the sound of electric guitars and the effect pedals that shape it.</p>
+            <p className="text-sm md:text-base">　As a hobby, I take my time building apps that I wish existed. Alongside app development, I&#39;m also involved in music.</p>
+            <p className="text-sm md:text-base">　Please check out my apps and music on the WORK page.</p>
         </div>
         </FadeinAnimation>
-        
-        <div className="mt-10 z-10 flex-col place-items-center ">
+
+        <div className="mt-10 z-10 flex-col place-items-center">
             <FadeinAnimation>
             <h1 className="text-xl md:text-2xl my-4 font-semibold">MY HISTORY</h1>
             </FadeinAnimation>
-            <FadeinAnimation>
-            <div className="flex flex-col md:flex-row items-center bg-gray-300 rounded-md my-20">
-              <p className="pl-10 pr-5 indent-2">In 2020: when I was 17 and was high school student, the Pandemic hit the world. All events were cancelled and we&#39;re in a kind of &#34;panic&#34;, so there&#39;re a lot of problems. <br></br>
-              　As a member of the high school, I cannot ignore these problems. So, I ran for election and became a school comittee president. I led my school and changed several &#34;ridiculous&#34; rules which was not matched to post-pandemic society. That&#39;s the time I started my career as a &#34;leader&#34;.</p>
-              <img src="/kita.jpg" className="w-full md:w-1/2 rounded-r-md" />
-            </div>
-            </FadeinAnimation>
-            <FadeinAnimation>
-            <div className="flex flex-col md:flex-row items-center bg-gray-300 rounded-md mt-40">
-              <div className="rounded-l-md flex-col">
-                <img src="/pc.jpg" className="hidden md:block w-full md:w-auto"/>
-                <img src="/nagoyaUniv.png" className="w-full md:w-auto" />
-              </div>
-              <p className="pl-10 pr-5 indent-2">In 2022, I enrolled in Nagoya University, faculty of Informatics: where my life has been dynamically changed. I join band circle and application development circle, and I was deeply attracted.<br></br>
-              　As for jack, I became a president in 2023, and vice-president in 2024. Using the experiences at school comittee, I led jack. As a result, jack now has many cooperation with other circles and organizations.<br></br>
-              　Of course, in classes, I study hard in order to become a AI engineer with deep recognitions. </p>
-            </div>
-            </FadeinAnimation>
-            <FadeinAnimation>
-            <div className="flex flex-col md:flex-row items-center bg-gray-300 rounded-md mt-40">
-              <p className="pl-10 pr-5 indent-2">Since I join jack, I&#39;ve developed a lot of applications. As of 31/08/2024, I&#39;ve developed 9 applications, and 4 applications are released on web. Please check these 4 applications on WORK page.</p>
-              <div className="grid grid-cols-2"><img src="/yorimichizu.png"/><img src="/mynewgear.png" className="rounded-tr-md"/><img src="/shinkanweb2023.png"/><img src="/shinkanweb2024.png" className="rounded-br-md"/></div>
-            </div>
-            </FadeinAnimation>
-            <FadeinAnimation>
-            <div className="bg-gray-300 rounded-md mt-40 grid grid-cols-1 md:grid-cols-2 items-center">
-              <img src="/matsuriba.jpg" /><p className="pl-10 pr-5 indent-2">As an university student, I&#39;ve joined a lot of events held at the outside of universtity. In 2023, I and my friends of other universities started an event in Nagoya called &#34;Matsuriba&#34;. Matsuriba is the event to gather student engineers and make collaborations. I believe that led Nagoya to be full of innovations.</p>
-              <p className="pl-10 pr-5 indent-2">In 2024, I flew to Singapore and studied at NUS for 2 weeks. In Singapore, I visited the Singapore office of Google, Microsoft, AWS, and Toyota-Tusho. I studied not only IT skills, but also entreprenuership and management through this 2-week-stay. That was precious experience, I think.<br></br>
-              　To join these events makes me more sensitive and gives me deep understandings and precious connections, I think. That&#39;s why I actively join many envents.</p><img src="/google.jpg"  />
-            </div>
-            </FadeinAnimation>
+            <Timeline lang="en" />
         </div>
-        
+
         <h1 className="mt-10 text-xl md:text-2xl mb-4 font-semibold">ACCOUNT</h1>
         <p className="my-4 text-sm md:text-md">　If you want to contact me, please send messages to accounts below, or to the e-mail( {process.env.NEXT_PUBLIC_MAIL} ).</p>
         <div className="mb-20 flex flex-col items-center">

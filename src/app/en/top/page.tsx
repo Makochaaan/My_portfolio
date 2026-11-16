@@ -51,23 +51,23 @@ export default function Top() {
                         <h1 className="mb-10 font-bold text-3xl text-center">WORKS</h1>
                         <div className="grid text-center lg:mb-10 lg:w-full lg:max-w-5xl lg:grid-cols-2 lg:text-left lg:gap-10">
                             <div className="relative group">
-                                <a href="https://yorimichizu.up.railway.app" rel="noopener noreferrer" target="_blank">
-                                    <img src="/yorimichizu.png" className="rounded-md border-2 border-indigo-600" />
+                                <a href="https://www.youtube.com/watch?v=lA9EluZugD8" rel="noopener noreferrer" target="_blank">
+                                    <img src="/Sudo.png" className="rounded-md border-2 border-indigo-600 w-full h-64 object-cover" />
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <div className="flex items-center absolute bottom-0 right-0 bg-indigo-500/70 flex-col px-16 py-2 rounded-tl-lg rounded-br-lg text-white">
-                                            <p>Yorimichizu</p>
-                                            <p>At 2023/10</p>
+                                            <p>SUDO</p>
+                                            <p>2025/11</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div className="relative group">
-                                <a href="https://unityroom.com/games/my_new_gear" rel="noopener noreferrer" target="_blank">
-                                    <img src="/mynewgear.png" className="rounded-md border-2 border-indigo-600" />
+                                <a href="https://unityroom.com/games/jackhack2025_h" rel="noopener noreferrer" target="_blank">
+                                    <img src="/noiseTaishi.png" className="rounded-md border-2 border-indigo-600 w-full h-64 object-cover" />
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <div className="flex items-center absolute bottom-0 right-0 bg-indigo-500/70 flex-col px-16 py-2 rounded-tl-lg rounded-br-lg text-white">
-                                            <p>My New Gear</p>
-                                            <p>At 2023/04</p>
+                                            <p>Noise-Canceling Shotoku Taishi</p>
+                                            <p>2025/04</p>
                                         </div>
                                     </div>
                                 </a>

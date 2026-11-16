@@ -17,10 +17,15 @@ return (
                 <h2 className="mt-2 mb-10 font-bold flex justify-center text-center text-blue-700">There are apps which I made. You click and check the detail.</h2>
                 <div className="grid text-center lg:mb-10 lg:w-full lg:max-w-5xl lg:grid-cols-2 lg:text-left lg:gap-10">
   
+                    <WorkTab route="https://www.youtube.com/watch?v=lA9EluZugD8" image="/Sudo.png" title="SUDO - Math Video Generator" year="2025/11" target="1"/>
+                    <WorkTab route="https://odhackathon.metro.tokyo.lg.jp/collection/97/?year=2025" image="/chari-navi.png" title="Chari-Navi" year="2025/09" target="1"/>
+                    <WorkTab route="https://youtube.com/shorts/-5Ac-um0i0Q?feature=share" image="/nexTrain.png" title="NexTrain" year="2025/05" target="1"/>
+                    <WorkTab route="https://unityroom.com/games/jackhack2025_h" image="/noiseTaishi.png" title="Noise-Canceling Shotoku Taishi" year="2025/04" target="1"/>
+                    <WorkTab route="https://www.youtube.com/watch?v=PAU-5mBOTMw" image="/ekikuguru.png" title="Ekikuguru" year="2024/10" target="1"/>
                     <WorkTab route="https://yorimichizu.up.railway.app" image="/yorimichizu.png" title="Yorimichizu" year="2023/10" target="1"/>
                     <WorkTab route="https://unityroom.com/games/my_new_gear" image="/mynewgear.png" title="My New Gear" year="2023/02" target="1"/>
-                    <WorkTab route="https://sc.coop.nagoya-u.ac.jp/nusc/sinkan2023/" image="/shinkanweb2024.png" title="Nagoya Univ. Coop Web2024" year="2024/04" target="1"/>
-                    <WorkTab route="https://sc.coop.nagoya-u.ac.jp/nusc/sinkan2024/" image="/shinkanweb2023.png" title="Nagoya Univ. Coop Web2023" year="2023/04" target="1"/>
+                    <WorkTab route="https://sc.coop.nagoya-u.ac.jp/nusc/sinkan2024/" image="/shinkanweb2024.png" title="Nagoya Univ. Coop Web2024" year="2024/04" target="1"/>
+                    <WorkTab route="https://sc.coop.nagoya-u.ac.jp/nusc/sinkan2023/" image="/shinkanweb2023.png" title="Nagoya Univ. Coop Web2023" year="2023/04" target="1"/>
                 
                 </div>
             </div>
